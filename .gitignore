@@ -6,3 +6,6 @@ materials/~$CTA&混合中性_周度净值序列.xlsx
 
 # 微信小程序本地私有配置（勿提交 AppID 等）
 results/barter-miniapp-mvp/miniprogram/project.private.config.json
+
+# 独立小程序仓库（自带 .git），勿纳入父仓库
+barter-miniapp/
