@@ -1,0 +1,13 @@
+---
+description: Default output location for generated analysis, charts, and exports is results/
+alwaysApply: true
+---
+
+# 结果输出目录
+
+1. 凡在本仓库中**新生成**的分析报告、统计表、导出 CSV/Excel、图表（SVG/PNG 等）、用于复现的中间数据文件，**默认写入 `results/`**。  
+2. **原始材料**仍放在 `materials/`；**不要**把新产出覆盖或混入 `materials/` 中的原件，除非用户明确要求。  
+3. 每个结果文件或报告须在正文内**标注数据出处**（`materials/` 路径、工作表名、字段或行列）。  
+4. 用户当次指令指定其他输出目录时，以用户指令为准，并在答复中说明路径。
+
+说明见：[results/README.md](../../results/README.md)、[instruments/work-materials-instrument.md](../../instruments/work-materials-instrument.md) §2.2。

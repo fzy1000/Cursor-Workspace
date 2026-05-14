@@ -1,0 +1,7 @@
+{
+  "desc": "以物换物小程序",
+  "rules": [{
+    "action": "allow",
+    "page": "*"
+  }]
+}

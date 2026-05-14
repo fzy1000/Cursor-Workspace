@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="card">
+    <view class="title">欢迎来到以物换物</view>
+    <view class="subtitle mt">用微信登录，立即开始交换你的闲置物品</view>
+    <checkbox-group bindchange="onChangeAgree" class="agree-wrap">
+      <label>
+        <checkbox checked="{{agreed}}" value="agree" />
+        <text>我已阅读并同意《用户协议》</text>
+      </label>
+    </checkbox-group>
+    <button class="btn-primary" loading="{{loading}}" bindtap="onLoginTap">微信授权登录</button>
+  </view>
+</view>

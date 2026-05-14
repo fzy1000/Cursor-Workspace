@@ -1,0 +1,17 @@
+<view class="container">
+  <view wx:if="{{!empty && candidates[currentIndex]}}" class="card">
+    <image class="cover" src="{{candidates[currentIndex].images[0]}}" mode="aspectFill" />
+    <view class="price">￥{{candidates[currentIndex].price}}</view>
+    <view class="desc">{{candidates[currentIndex].description}}</view>
+    <view class="subtitle">价格差：{{candidates[currentIndex].diffPercent}}%</view>
+    <view class="btn-row">
+      <view class="btn-secondary half" bindtap="onDislike">左滑不喜欢</view>
+      <view class="btn-primary half" bindtap="onLike">右滑喜欢</view>
+    </view>
+  </view>
+
+  <view wx:if="{{empty}}" class="card">
+    <view class="title">暂无候选</view>
+    <view class="subtitle">当前没有价格差异 10% 内的可匹配物品</view>
+  </view>
+</view>

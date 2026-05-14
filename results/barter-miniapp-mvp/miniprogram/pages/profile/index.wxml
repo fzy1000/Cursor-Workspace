@@ -1,0 +1,30 @@
+<view class="container" wx:if="{{profile}}">
+  <view class="card">
+    <view class="user-row">
+      <image src="{{profile.avatarUrl}}" class="avatar" mode="aspectFill" />
+      <view>
+        <view class="title">{{profile.nickName}}</view>
+        <view class="subtitle">信用分：{{profile.creditScore}}（{{profile.creditLevel}}）</view>
+      </view>
+    </view>
+
+    <view class="section-title">个人简介</view>
+    <view wx:if="{{!editingBio}}" class="bio">{{profile.bio || '这个人很懒，还没有简介。'}}</view>
+    <textarea wx:if="{{editingBio}}" maxlength="150" class="bio-input" value="{{bioInput}}" bindinput="onBioInput" />
+
+    <view wx:if="{{!editingBio}}" class="btn-secondary" bindtap="onEditBio">编辑简介</view>
+    <view wx:if="{{editingBio}}" class="btn-primary" bindtap="onSaveBio">保存简介</view>
+  </view>
+
+  <view class="card mt">
+    <view class="section-title">最近发布</view>
+    <view wx:if="{{recentItems.length === 0}}" class="subtitle">你还没有发布物品</view>
+    <view wx:for="{{recentItems}}" wx:key="_id" class="item-row">
+      <image src="{{item.images[0]}}" class="item-cover" mode="aspectFill" />
+      <view class="item-info">
+        <view>￥{{item.price}}</view>
+        <view class="subtitle">{{item.description}}</view>
+      </view>
+    </view>
+  </view>
+</view>

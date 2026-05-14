@@ -1,0 +1,20 @@
+---
+description: When generating images, infographics, or PowerPoint content, follow style/INSTRUCTION.md
+alwaysApply: true
+---
+
+# 配图与 PPT 风格 Instruction
+
+当用户要求**新建或改版**以下内容时，必须遵守 **`style/INSTRUCTION.md`**：
+
+- 演示文稿（PPT / Keynote / 逐页说明）、配图与信息图的**文字脚本、结构、视觉规范说明**
+- 用于后续在 Figma、PPT、AI 绘图等工具中实现的**版式与样式描述**
+
+执行要点：
+
+1. **必须先阅读 `style/` 内全部图片、PDF 与 `INSTRUCTION.md`**，确认两套参考系：**套系 A（量派蓝红，PNG 样本）**与**套系 B（黑翼金灰 + 同主题 PDF）**；按 `INSTRUCTION.md` 第 1.3 节选择套系，不明确则询问用户。
+2. **以 `style/INSTRUCTION.md` 为汇总指令**，并与 `style/README.md` 及其他 md 对齐。
+3. **事实与数字**仅来自 `materials/` 与共识文件；**不得**把样本/PDF 中的业绩、日期、产品结论当作新材料的事实。
+4. 若仅有图片/PDF、尚无 `brand.md` 等，**以色与版式条款以 `INSTRUCTION.md` 第 2、3 节为准**。
+
+完整指令：[style/INSTRUCTION.md](../../style/INSTRUCTION.md)

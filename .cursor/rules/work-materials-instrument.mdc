@@ -1,0 +1,14 @@
+---
+description: Enforce evidence-only use of uploaded work materials; no fabrication or unsourced web data
+alwaysApply: true
+---
+
+# 工作材料数据与来源约束
+
+1. **事实与数据**仅可来自本仓库内用户提供的材料（默认 `materials/`，及任务中明确包含的其他项目内路径）；不得编造、不得用常识或口述未落盘内容冒充材料依据。
+2. **不得擅自使用互联网或外部 API** 获取事实与数据，**除非用户在该次任务中明确允许**。
+3. 每条重要数字或事实须标注**可核对定位**（文件路径 + 表/页/段/单元格等）；无法定位则不得当作已确认信息输出。
+4. **公式、口径、定义**仅允许使用项目**共识文件**中的表述；默认查找 `materials/consensus.md`、`materials/consensus/*`、`docs/consensus.md`，或用户当次指定的项目内文件。若无共识文件且任务依赖计算，须说明缺口并请用户补充，**不得自拟公式当共识**。
+5. 材料不足时明确写「未提供 / 无法从现有材料得出」，**禁止用推测填空**。
+
+完整规程见：[instruments/work-materials-instrument.md](../../instruments/work-materials-instrument.md)

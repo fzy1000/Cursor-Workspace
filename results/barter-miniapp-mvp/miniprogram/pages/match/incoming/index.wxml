@@ -1,0 +1,14 @@
+<view class="container">
+  <view wx:if="{{loading}}" class="subtitle">加载中...</view>
+  <view wx:if="{{!loading && list.length === 0}}" class="card">
+    <view class="subtitle">暂时还没有人想和你交换这个物品。</view>
+  </view>
+  <view wx:for="{{list}}" wx:key="fromItemId" class="card space">
+    <image src="{{item.fromItem.images[0]}}" mode="aspectFill" class="cover" />
+    <view class="price">对方物品：￥{{item.fromItem.price}}</view>
+    <view class="desc">{{item.fromItem.description}}</view>
+    <view class="subtitle">用户：{{item.fromUser.nickName}}</view>
+    <view wx:if="{{item.matched}}" class="subtitle">已匹配成功</view>
+    <view wx:else class="btn-primary" bindtap="onAccept" data-fromitemid="{{item.fromItemId}}">我也喜欢</view>
+  </view>
+</view>

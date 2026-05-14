@@ -1,0 +1,22 @@
+{
+  "read": false,
+  "write": false,
+  "collections": {
+    "users": {
+      "read": "auth != null && auth.openid == doc._id",
+      "write": false
+    },
+    "items": {
+      "read": "auth != null",
+      "write": false
+    },
+    "swipes": {
+      "read": false,
+      "write": false
+    },
+    "matches": {
+      "read": "auth != null && (auth.openid == doc.userAOpenId || auth.openid == doc.userBOpenId)",
+      "write": false
+    }
+  }
+}

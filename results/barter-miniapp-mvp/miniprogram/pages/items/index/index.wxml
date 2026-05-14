@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="btn-primary" bindtap="onCreateTap">+ 发布新物品</view>
+
+  <view wx:if="{{loading}}" class="subtitle list-space">加载中...</view>
+
+  <view wx:if="{{!loading && items.length === 0}}" class="card list-space">
+    <view class="subtitle">还没有发布任何物品，点击上方按钮开始吧。</view>
+  </view>
+
+  <view wx:for="{{items}}" wx:key="_id" class="card list-space item-card" bindtap="onItemTap" data-id="{{item._id}}">
+    <image class="cover" src="{{item.images[0]}}" mode="aspectFill" />
+    <view class="info">
+      <view class="line1">￥{{item.price}}</view>
+      <view class="line2">{{item.description}}</view>
+      <view class="line3">状态：{{item.status}}</view>
+    </view>
+  </view>
+</view>

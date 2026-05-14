@@ -1,0 +1,56 @@
+.field-title {
+  font-size: 28rpx;
+  margin-bottom: 12rpx;
+  margin-top: 20rpx;
+  font-weight: 600;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.img-wrap {
+  width: 150rpx;
+}
+
+.img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+}
+
+.remove {
+  color: #dc2626;
+  font-size: 22rpx;
+}
+
+.add-btn {
+  width: 150rpx;
+  height: 150rpx;
+  background: #eef2ff;
+  border-radius: 10rpx;
+  color: #4338ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 2rpx solid #e5e7eb;
+  border-radius: 12rpx;
+  padding: 18rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.textarea {
+  min-height: 180rpx;
+}
+
+.submit {
+  margin-top: 28rpx;
+}

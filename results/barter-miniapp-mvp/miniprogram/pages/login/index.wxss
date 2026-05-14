@@ -1,0 +1,8 @@
+.mt {
+  margin-top: 12rpx;
+}
+
+.agree-wrap {
+  margin: 32rpx 0;
+  color: #4b5563;
+}

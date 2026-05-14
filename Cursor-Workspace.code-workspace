@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.dialog.defaultPath": "/Users/allen/Documents/Project",
+    "window.commandCenter": true
+  }
+}

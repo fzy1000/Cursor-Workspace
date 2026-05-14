@@ -1,0 +1,8 @@
+.venv/
+.DS_Store
+
+# Excel 打开时产生的临时锁文件（完整文件名，避免 $ 在 glob 中的歧义）
+materials/~$CTA&混合中性_周度净值序列.xlsx
+
+# 微信小程序本地私有配置（勿提交 AppID 等）
+results/barter-miniapp-mvp/miniprogram/project.private.config.json

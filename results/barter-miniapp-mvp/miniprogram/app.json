@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/items/index",
+    "pages/items/create/index",
+    "pages/items/detail/index",
+    "pages/match/swipe/index",
+    "pages/match/incoming/index",
+    "pages/profile/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "以物换物",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f7fb",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#1d4ed8",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/items/index",
+        "text": "我的物品"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

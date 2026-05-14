@@ -1,0 +1,18 @@
+<view class="container" wx:if="{{item}}">
+  <view class="card">
+    <swiper indicator-dots="{{item.images.length > 1}}" class="swiper">
+      <swiper-item wx:for="{{item.images}}" wx:key="*this">
+        <image src="{{item}}" mode="aspectFill" class="slide-img" />
+      </swiper-item>
+    </swiper>
+    <view class="price">￥{{item.price}}</view>
+    <view class="desc">{{item.description}}</view>
+    <view class="tags">
+      <text wx:for="{{item.tags}}" wx:key="*this" class="tag">{{item}}</text>
+    </view>
+    <view class="subtitle">状态：{{item.status}}</view>
+  </view>
+
+  <view class="btn-primary space" bindtap="onGoSwipe">去匹配</view>
+  <view class="btn-secondary space" bindtap="onGoIncoming">谁想和我换</view>
+</view>

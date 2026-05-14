@@ -1,0 +1,41 @@
+.swiper {
+  width: 100%;
+  height: 420rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background: #e5e7eb;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.price {
+  margin-top: 16rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 10rpx;
+}
+
+.tags {
+  margin-top: 10rpx;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6rpx 12rpx;
+  border-radius: 999rpx;
+  background: #dbeafe;
+  color: #1d4ed8;
+  margin-right: 10rpx;
+  margin-top: 8rpx;
+  font-size: 22rpx;
+}
+
+.space {
+  margin-top: 18rpx;
+}

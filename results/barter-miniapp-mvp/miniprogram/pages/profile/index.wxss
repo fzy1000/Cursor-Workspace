@@ -1,0 +1,51 @@
+.user-row {
+  display: flex;
+  gap: 18rpx;
+  align-items: center;
+}
+
+.avatar {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 55rpx;
+  background: #e5e7eb;
+}
+
+.section-title {
+  margin-top: 22rpx;
+  margin-bottom: 10rpx;
+  font-weight: 600;
+}
+
+.bio {
+  color: #374151;
+}
+
+.bio-input {
+  width: 100%;
+  min-height: 140rpx;
+  border: 2rpx solid #e5e7eb;
+  border-radius: 10rpx;
+  padding: 14rpx;
+  box-sizing: border-box;
+}
+
+.mt {
+  margin-top: 20rpx;
+}
+
+.item-row {
+  margin-top: 14rpx;
+  display: flex;
+  gap: 12rpx;
+}
+
+.item-cover {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 8rpx;
+}
+
+.item-info {
+  flex: 1;
+}

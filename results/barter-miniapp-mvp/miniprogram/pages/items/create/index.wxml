@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="card">
+    <view class="field-title">物品图片（至少1张）</view>
+    <view class="images">
+      <view wx:for="{{images}}" wx:key="*this" class="img-wrap">
+        <image src="{{item}}" mode="aspectFill" class="img" />
+        <text class="remove" bindtap="onRemoveImage" data-index="{{index}}">删除</text>
+      </view>
+      <view wx:if="{{images.length < 9}}" class="add-btn" bindtap="onChooseImages">+ 添加</view>
+    </view>
+
+    <view class="field-title">描述</view>
+    <textarea maxlength="200" placeholder="请输入物品描述" bindinput="onDescriptionInput" value="{{description}}" class="textarea" />
+
+    <view class="field-title">标签（可选，逗号分隔）</view>
+    <input placeholder="如：数码,九成新" bindinput="onTagsInput" value="{{tagsInput}}" class="input" />
+
+    <view class="field-title">价格（元）</view>
+    <input type="digit" placeholder="请输入价格" bindinput="onPriceInput" value="{{price}}" class="input" />
+
+    <button class="btn-primary submit" loading="{{submitting}}" bindtap="onSubmit">发布物品</button>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+---
+description: Apply Python data analysis and Jupyter best practices in notebooks
+globs: "**/*.ipynb"
+alwaysApply: false
+---
+
+# Notebook 中的数据分析
+
+在本仓库编辑或运行 **`.ipynb`** 时：
+
+1. 遵循项目技能 **`python-data-notebooks`**（`.cursor/skills/python-data-notebooks/SKILL.md`）：pandas 向量化、`loc`/`iloc`、matplotlib/seaborn 作图规范、可复现单元顺序、数据质量检查。  
+2. 若笔记本读取 **`materials/`**，结论与图表须可回溯至源文件路径与字段；导出物写入 **`results/`**（见 `results-output` 规则与 `materials-analysis-outputs` 技能）。  
+3. 优先在 notebook 内用 **markdown** 写明数据来源、假设与步骤，避免无注释的长代码单元。
+
+完整准则见：[.cursor/skills/python-data-notebooks/SKILL.md](../skills/python-data-notebooks/SKILL.md)
