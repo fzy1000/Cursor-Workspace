@@ -14,13 +14,15 @@
   },
   "location": {
     "region": "费伦 / 剑湾 / 长路",
-    "place": "安费尔村 · 马兰德道口广场",
-    "place_en": "Amphail, the Malanderways"
+    "place": "安费尔村 · 鹿角酒壶（门外即马兰德道口）",
+    "place_en": "Amphail, the Stag-Horned Flagon"
   },
   "player_character_id": null,
   "flags": {
     "character_created": false,
     "entered_stag_flagon": false,
+    "saw_warder_notice": false,
+    "heard_beacon_rumor": false,
     "examined_shalarn": false,
     "spoke_to_hask": false,
     "spoke_to_renn": false,
@@ -36,7 +38,8 @@
     "missing_horses": 3,
     "zhent_wagon": 1,
     "myrkul_casket": 0,
-    "grayveil_arrival": 0
+    "ritual_midnight": 1,
+    "undead_walk": 0
   },
   "factions": {
     "竖琴手同盟": 0,
@@ -93,10 +96,26 @@
       "score": -1,
       "alive": true,
       "known_to_player": false
+    },
+    "cael": {
+      "name": "凯尔·晨誓修士",
+      "role": "劳山达旅行侍僧",
+      "attitude": "friendly",
+      "score": 1,
+      "alive": true,
+      "known_to_player": false
+    },
+    "grayveil": {
+      "name": "灰巾",
+      "role": "米尔寇祭司（未现身于酒壶）",
+      "attitude": "hostile",
+      "score": -2,
+      "alive": true,
+      "known_to_player": false
     }
   },
   "unused_pregens_as_npcs": [],
   "inspiration": false,
   "last_dice": [],
-  "notes_public": "角色尚未选定。广场上的争执与雕像黑痕会因你是谁、先跟谁说话而走向不同分支。"
+  "notes_public": "角色尚未选定。鹿角酒壶内有领主管家告示：清扫东边旧烽火塔，赏十五龙币。牧场主另加五枚寻马。劳山达修士从林中逃回，说塔下圣所的光灭了。"
 }
