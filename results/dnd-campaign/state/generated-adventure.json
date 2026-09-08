@@ -1,0 +1,337 @@
+{
+  "method": "DMG 第3章地点型冒险步骤1–6 + 第5章构筑地下城 + 附录A（限制4房）",
+  "seed": 20260908,
+  "core_assumptions": "众神督控；世界未完全开化；世界古老；冲突塑造历史；世界有魔法（DMG PDF约p10）",
+  "setting": "被遗忘国度神系（PHB附录B）；默认核心假想世界（DMG第1章）。年代未在三宝书写明，故不自拟DR年份。",
+  "tier": "1–4级当地英雄（DMG「游戏阶段」，PDF约p35）：村民命运可系于初出茅庐者；典型对手含兽人、狼、巨型蜘蛛、邪教徒、食尸鬼、受雇恶棍。",
+  "settlement": {
+    "type": "村庄",
+    "population": "至多1000",
+    "government": "贵族不常住，执政官reeve裁决与收税",
+    "defense": "小型士兵部队+民兵",
+    "commerce": "日常用品在旅馆或交易地；其余靠旅行商人",
+    "organizations": "一两座神庙或神坛",
+    "shrine": "裳禔亚 Chauntea（NG，农业）",
+    "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 聚居地·村庄，PDF约p17",
+    "name": null,
+    "name_note": "DMG大本营：询问玩家其角色的家人/导师后再命名。未创角前称「起始村庄」。"
+  },
+  "solo_xp": {
+    "thresholds_1st": {
+      "easy": 25,
+      "medium": 50,
+      "hard": 75,
+      "deadly": 100
+    },
+    "day": 300,
+    "party_size_note": "队伍少于3人时遭遇倍数上调一档（1怪×1.5）。DMG PDF约p82。",
+    "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 「角色等级对应的经验阈值」「当日冒险XP」，PDF约p82、p84"
+  },
+  "rolls": [
+    {
+      "table": "地下城目标",
+      "die": "d20",
+      "roll": 8,
+      "result": "拯救一名俘虏",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第3章「地下城目标」，PDF约p72"
+    },
+    {
+      "table": "冒险反派",
+      "die": "d20",
+      "roll": 7,
+      "result": "任何行为趋向的不死生物",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第3章「冒险反派」，PDF约p73"
+    },
+    {
+      "table": "冒险盟友",
+      "die": "d12",
+      "roll": 6,
+      "result": "智者",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第3章「冒险盟友」，PDF约p74"
+    },
+    {
+      "table": "冒险主顾",
+      "die": "d20",
+      "roll": 5,
+      "result": "军官",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第3章「冒险主顾」，PDF约p74"
+    },
+    {
+      "table": "冒险开场",
+      "die": "d12",
+      "roll": 4,
+      "result": "冒险者们在一副尸体上发现了一张地图。该地图既设定了冒险所在，同时还是该冒险中反派想要之物",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第3章「冒险开场」，PDF约p74"
+    },
+    {
+      "table": "冒险高潮",
+      "die": "d12",
+      "roll": 11,
+      "result": "须选择追捕逃亡反派或拯救关心的 NPC/无辜者",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第3章「冒险高潮」，PDF约p74"
+    },
+    {
+      "table": "地下城所在地",
+      "die": "d100",
+      "roll": 60,
+      "result": "某山隘口中",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第5章「地下城所在地」，PDF约p100"
+    },
+    {
+      "table": "地下城建造者",
+      "die": "d20",
+      "roll": 12,
+      "result": "人类",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第5章「地下城建造者」，PDF约p101"
+    },
+    {
+      "table": "建造者阵营",
+      "die": "d20",
+      "roll": 9,
+      "result": "守序中立",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 「角色阵营」，PDF约p101"
+    },
+    {
+      "table": "建造者职业",
+      "die": "d20",
+      "roll": 1,
+      "result": "野蛮人",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 「角色职业」，PDF约p101"
+    },
+    {
+      "table": "地下城用途",
+      "die": "d20",
+      "roll": 6,
+      "result": "迷宫",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第5章「地下城用途」，PDF约p102"
+    },
+    {
+      "table": "地下城历史",
+      "die": "d20",
+      "roll": 16,
+      "result": "所在地被众神诅咒并受众神离弃",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 第5章「地下城历史」，PDF约p102"
+    },
+    {
+      "table": "村庄神坛（DMG：村庄有一两座神庙或神坛）",
+      "die": "d6",
+      "roll": 1,
+      "result": "裳禔亚 Chauntea（NG，农业）",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 「聚居地·村庄」PDF约p17；神名 PHB 附录B p294"
+    },
+    {
+      "table": "起始区域（附录A）",
+      "die": "d10",
+      "roll": 9,
+      "result": "通道10尺；T型路口",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「起始区域」，PDF约p271"
+    },
+    {
+      "table": "房间1尺寸",
+      "die": "d20",
+      "roll": 7,
+      "result": "长方形20x30",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间」，PDF约p272"
+    },
+    {
+      "table": "房间1门型",
+      "die": "d20",
+      "roll": 14,
+      "result": "石质，栓住或上锁",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「门类型」，PDF约p272"
+    },
+    {
+      "table": "房间1原用途",
+      "die": "见该用途表",
+      "roll": 14,
+      "result": "储物室",
+      "source": "附录A 地下城：迷宫 d20，PDF约p273"
+    },
+    {
+      "table": "房间1现状",
+      "die": "d20",
+      "roll": 20,
+      "result": "维持原状且光洁如新",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间现状」，PDF约p276"
+    },
+    {
+      "table": "房间1内容",
+      "die": "d100",
+      "roll": 26,
+      "result": "怪物（宠物或结盟生物）",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「地下城房间内容」，PDF约p276"
+    },
+    {
+      "table": "房间1怪物动机",
+      "die": "d20",
+      "roll": 8,
+      "result": "地下城中找一个物品",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「怪物动机」，PDF约p276"
+    },
+    {
+      "table": "房间2尺寸",
+      "die": "d20",
+      "roll": 14,
+      "result": "长方形40x50",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间」，PDF约p272"
+    },
+    {
+      "table": "房间2门型",
+      "die": "d20",
+      "roll": 14,
+      "result": "石质，栓住或上锁",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「门类型」，PDF约p272"
+    },
+    {
+      "table": "房间2原用途",
+      "die": "见该用途表",
+      "roll": 9,
+      "result": "巢穴",
+      "source": "附录A 地下城：迷宫 d20，PDF约p273"
+    },
+    {
+      "table": "房间2现状",
+      "die": "d20",
+      "roll": 13,
+      "result": "家具受损但仍然存在",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间现状」，PDF约p276"
+    },
+    {
+      "table": "房间2内容",
+      "die": "d100",
+      "roll": 11,
+      "result": "怪物（主要生物）与宝藏",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「地下城房间内容」，PDF约p276"
+    },
+    {
+      "table": "房间2怪物动机",
+      "die": "d20",
+      "roll": 2,
+      "result": "寻找一个避难所",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「怪物动机」，PDF约p276"
+    },
+    {
+      "table": "房间3尺寸",
+      "die": "d20",
+      "roll": 14,
+      "result": "长方形40x50",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间」，PDF约p272"
+    },
+    {
+      "table": "房间3门型",
+      "die": "d20",
+      "roll": 3,
+      "result": "木质",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「门类型」，PDF约p272"
+    },
+    {
+      "table": "房间3原用途",
+      "die": "见该用途表",
+      "roll": 9,
+      "result": "巢穴",
+      "source": "附录A 地下城：迷宫 d20，PDF约p273"
+    },
+    {
+      "table": "房间3现状",
+      "die": "d20",
+      "roll": 16,
+      "result": "家具受损但仍然存在",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间现状」，PDF约p276"
+    },
+    {
+      "table": "房间3内容",
+      "die": "d100",
+      "roll": 23,
+      "result": "怪物（宠物或结盟生物）",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「地下城房间内容」，PDF约p276"
+    },
+    {
+      "table": "房间3怪物动机",
+      "die": "d20",
+      "roll": 17,
+      "result": "躲避危险",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「怪物动机」，PDF约p276"
+    },
+    {
+      "table": "房间4尺寸",
+      "die": "d20",
+      "roll": 9,
+      "result": "长方形20x30",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间」，PDF约p272"
+    },
+    {
+      "table": "房间4门型",
+      "die": "d20",
+      "roll": 2,
+      "result": "木质",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「门类型」，PDF约p272"
+    },
+    {
+      "table": "房间4原用途",
+      "die": "见该用途表",
+      "roll": 3,
+      "result": "警卫室",
+      "source": "附录A 地下城：迷宫 d20，PDF约p273"
+    },
+    {
+      "table": "房间4现状",
+      "die": "d20",
+      "roll": 4,
+      "result": "坑洞，地面部分倒塌",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「房间现状」，PDF约p276"
+    },
+    {
+      "table": "房间4内容",
+      "die": "d100",
+      "roll": 25,
+      "result": "怪物（宠物或结盟生物）",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「地下城房间内容」，PDF约p276"
+    },
+    {
+      "table": "房间4怪物动机",
+      "die": "d20",
+      "roll": 12,
+      "result": "躲避敌人",
+      "source": "materials/dnd-5e-三宝书/DND_5E_城主指南CN.pdf 附录A「怪物动机」，PDF约p276"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "size": "长方形20x30",
+      "door": "石质，栓住或上锁",
+      "purpose": "储物室",
+      "state": "维持原状且光洁如新",
+      "contents": "怪物（宠物或结盟生物）",
+      "motive": "地下城中找一个物品"
+    },
+    {
+      "id": 2,
+      "size": "长方形40x50",
+      "door": "石质，栓住或上锁",
+      "purpose": "巢穴",
+      "state": "家具受损但仍然存在",
+      "contents": "怪物（主要生物）与宝藏",
+      "motive": "寻找一个避难所"
+    },
+    {
+      "id": 3,
+      "size": "长方形40x50",
+      "door": "木质",
+      "purpose": "巢穴",
+      "state": "家具受损但仍然存在",
+      "contents": "怪物（宠物或结盟生物）",
+      "motive": "躲避危险"
+    },
+    {
+      "id": 4,
+      "size": "长方形20x30",
+      "door": "木质",
+      "purpose": "警卫室",
+      "state": "坑洞，地面部分倒塌",
+      "contents": "怪物（宠物或结盟生物）",
+      "motive": "躲避敌人"
+    }
+  ],
+  "creator_detail": {}
+}

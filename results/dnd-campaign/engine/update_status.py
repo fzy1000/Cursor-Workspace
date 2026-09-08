@@ -83,38 +83,35 @@ def load(name: str):
 def render_unselected(world: dict) -> str:
     cal = world["calendar"]
     loc = world["location"]
+    step = world.get("chargen_step", 1)
     return f"""# 角色状态
 
-[回到战役说明](README.md)
+[回到战役说明](README.md) · [生成日志](GENERATION-LOG.md)
 
 > 点开本文件即可查看当前属性、状态、装备、背包、技能、专长、战技与魔法。  
-> **数据源**：`state/character.json` + `state/world-state.json`（由 `engine/update_status.py` 生成，请勿手改本文当作记忆）。
+> **数据源**：`state/character.json` + `state/world-state.json`。
 
 ## 战役时钟
 
-- **年份**：{cal['year_dr']} DR · {cal['year_name']}
-- **日期**：{cal['month_cn']}（{cal['month']}）{cal['day']} 日 · {cal['time_of_day']}
-- **地点**：{loc['place']}（{loc['region']}）
+- **创角步骤**：第 {step} 步 / 共 6 步（《玩家手册》第 1 章）
+- **地点**：{loc.get('place')}
 - **回合**：第 {world['turn']} 轮 · 场次 {world['session']}
+- **年份**：三宝书未写明，不填 DR 纪年
 
 ## 身份
 
-尚未选定角色。请在对话中回复 **A / B / C / D**（或提出自定义概念，DM 按《玩家手册》第 1 章步骤落地）。
+尚未创建。请按手册顺序回复，不要跳步。
 
-| 代号 | 角色 | 种族 / 职业 / 背景 |
-|------|------|-------------------|
-| A | 卡伦·安卡瑟 | 人类（泰瑟尔）战士 · 民间英雄 |
-| B | 伊拉恩·月溪 | 月精灵法师 · 学者 |
-| C | 布琳达·石炉 | 丘陵矮人牧师（海姆·生命） · 侍僧 |
-| D | 佩林·荆袋 | 轻足半身人游荡者 · 罪犯 |
+1. **选择种族**（第 2 章）：矮人、精灵、半身人、人类、龙裔、侏儒、半精灵、半兽人、提夫林（含书中亚种）。  
+2. **选择职业**（第 3 章）：野蛮人、吟游诗人、牧师、德鲁伊、战士、武僧、圣武士、游侠、游荡者、术士、邪术师、法师。可用该职业「快速建卡」。  
+3. **决定属性值**：掷 4d6 去最低 ×6，或使用标准数组 15、14、13、12、10、8。  
+4. **描述角色**：阵营、背景（第 4 章）、外貌、理想/羁绊/缺点。牧师须指定附录 B 神祇。  
+5. **选择装备**：职业与背景起始装备，或按第 5 章购装。  
+6. **集结**：单人战役省略队伍，可在此后进入已生成的开场。
 
 ## 属性 / 状态 / 装备 / 背包 / 技能 / 专长 / 战技 / 魔法
 
-创角完成后自动填写。1 级时专长与战技多为空：专长常见于人类变体或第 4 级；战斗大师战技见于战士第 3 级（《玩家手册》第 3、6 章）。
-
-## 派系声望
-
-{faction_table(world)}
+创角完成后自动填写。1 级专长与战斗大师战技通常未解锁（第 3、6 章）。
 
 ## 已知事态
 
@@ -123,15 +120,18 @@ def render_unselected(world: dict) -> str:
 
 
 def faction_table(world: dict) -> str:
+    fac = world.get("factions") or {}
+    if not fac:
+        return "（本场未掷出派系表，不记录声望。）"
     lines = ["| 派系 | 声望 |", "|------|------|"]
-    for k, v in world["factions"].items():
+    for k, v in fac.items():
         lines.append(f"| {k} | {v} |")
     return "\n".join(lines)
 
 
 def render_pc(pc: dict, world: dict, raw: dict) -> str:
-    cal = world["calendar"]
-    loc = world["location"]
+    cal = world.get("calendar") or {}
+    loc = world.get("location") or {}
     pb = 2
     ab = pc["abilities"]
     skills = pc.get("skills") or {}
@@ -186,9 +186,8 @@ def render_pc(pc: dict, world: dict, raw: dict) -> str:
 
 ## 战役时钟
 
-- **年份**：{cal['year_dr']} DR · {cal['year_name']}
-- **日期**：{cal['month_cn']}（{cal['month']}）{cal['day']} 日 · {cal['time_of_day']}
-- **地点**：{loc['place']}（{loc['region']}）
+- **年份**：{cal.get('year_dr') or '未在三宝书写明'}
+- **地点**：{loc.get('place')}（{loc.get('region') or ''}）
 - **回合**：第 {world['turn']} 轮 · 场次 {world['session']}
 - **经验**：{raw.get('xp', pc.get('xp', 0))} XP · **等级**：{raw.get('level', 1)} · **激励**：{'有' if world.get('inspiration') or raw.get('inspiration') else '无'}
 

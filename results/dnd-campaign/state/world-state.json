@@ -1,115 +1,54 @@
 {
-  "campaign": "长路暮铃",
+  "campaign": "三宝书程序生成 · 山隘口迷宫",
   "edition": "D&D 5e",
+  "generation_seed": 20260908,
   "session": 0,
   "turn": 0,
+  "chargen_step": 1,
   "calendar": {
-    "year_dr": 1492,
-    "year_name": "三帆起航之年",
-    "month": "Mirtul",
-    "month_cn": "融月",
-    "day": 12,
-    "time_of_day": "黄昏",
-    "note": "费伦历：融月约合暮春。据《城主指南》货币范例，深水城金币俗称龙币。"
+    "year_dr": null,
+    "note": "三宝书未写明本场战役年份，不自拟 DR 纪年。"
   },
   "location": {
-    "region": "费伦 / 剑湾 / 长路",
-    "place": "安费尔村 · 鹿角酒壶（门外即马兰德道口）",
-    "place_en": "Amphail, the Stag-Horned Flagon"
+    "region": "被遗忘国度神系下的默认核心假想世界（PHB附录B + DMG第1章）",
+    "place": "创角中（尚未进入开场）",
+    "place_en": null
   },
   "player_character_id": null,
   "flags": {
     "character_created": false,
-    "entered_stag_flagon": false,
-    "saw_warder_notice": false,
-    "heard_beacon_rumor": false,
-    "examined_shalarn": false,
-    "spoke_to_hask": false,
-    "spoke_to_renn": false,
-    "noticed_wagon": false,
-    "met_selene": false,
-    "met_vask": false,
-    "goblins_hostile": false,
-    "goblins_allied": false,
-    "statue_desecration_understood": false,
-    "silverwind_status": "missing"
+    "found_corpse_map": false,
+    "met_patron_officer": false,
+    "met_sage_ally": false,
+    "entered_maze": false,
+    "captive_rescued": false,
+    "undead_fled": false,
+    "map_in_player_hands": false
   },
-  "clocks": {
-    "missing_horses": 3,
-    "zhent_wagon": 1,
-    "myrkul_casket": 0,
-    "ritual_midnight": 1,
-    "undead_walk": 0
-  },
-  "factions": {
-    "竖琴手同盟": 0,
-    "领主联盟": 0,
-    "散塔林会": 0,
-    "铁手教团": 0,
-    "翠绿闲庭": 0
-  },
+  "clocks": {},
+  "factions": {},
   "npcs": {
-    "arleosa": {
-      "name": "阿勒奥萨·星炉",
-      "role": "鹿角酒壶老板",
+    "evendur": {
+      "name": "伊文德尔·托斯汀",
+      "role": "军官（主顾）",
       "attitude": "indifferent",
       "score": 0,
       "alive": true,
       "known_to_player": false
     },
-    "renn": {
-      "name": "伦恩·维尔达伍长",
-      "role": "深水城卫队（拉萨兰塔巡逻）",
+    "shandri": {
+      "name": "珊德瑞·埃文伍德",
+      "role": "智者（盟友）",
       "attitude": "indifferent",
       "score": 0,
       "alive": true,
       "known_to_player": false
     },
-    "hask": {
-      "name": "哈斯克·安布尔克朗",
-      "role": "牧场主，银风的主人",
-      "attitude": "indifferent",
-      "score": 0,
-      "alive": true,
-      "known_to_player": false
-    },
-    "selene": {
-      "name": "塞琳·羽琴",
-      "role": "旅客（竖琴手代理人，未公开）",
-      "attitude": "indifferent",
-      "score": 0,
-      "alive": true,
-      "known_to_player": false
-    },
-    "vask": {
-      "name": "瓦斯克·赫瑞尔",
-      "role": "自称米拉巴马商",
-      "attitude": "indifferent",
-      "score": 0,
-      "alive": true,
-      "known_to_player": false
-    },
-    "snitch": {
-      "name": "偷耳",
-      "role": "哥布林斥候",
-      "attitude": "hostile",
-      "score": -1,
-      "alive": true,
-      "known_to_player": false
-    },
-    "cael": {
-      "name": "凯尔·晨誓修士",
-      "role": "劳山达旅行侍僧",
+    "randal": {
+      "name": "兰德尔·安波克劳宁",
+      "role": "俘虏",
       "attitude": "friendly",
-      "score": 1,
-      "alive": true,
-      "known_to_player": false
-    },
-    "grayveil": {
-      "name": "灰巾",
-      "role": "米尔寇祭司（未现身于酒壶）",
-      "attitude": "hostile",
-      "score": -2,
+      "score": 0,
       "alive": true,
       "known_to_player": false
     }
@@ -117,5 +56,5 @@
   "unused_pregens_as_npcs": [],
   "inspiration": false,
   "last_dice": [],
-  "notes_public": "角色尚未选定。鹿角酒壶内有领主管家告示：清扫东边旧烽火塔，赏十五龙币。牧场主另加五枚寻马。劳山达修士从林中逃回，说塔下圣所的光灭了。"
+  "notes_public": "角色尚未按《玩家手册》第1章创建。冒险已用《城主指南》表格生成（见 GENERATION-LOG.md），创角完成后再执行开场：尸体与地图。"
 }
