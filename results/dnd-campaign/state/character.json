@@ -1,0 +1,12 @@
+{
+  "selected": false,
+  "id": null,
+  "name": "（未创建）",
+  "conditions": [],
+  "exhaustion": 0,
+  "death_saves": {"success": 0, "fail": 0},
+  "inspiration": false,
+  "xp": 0,
+  "level": 1,
+  "notes": []
+}

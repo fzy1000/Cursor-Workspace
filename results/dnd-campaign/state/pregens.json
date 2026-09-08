@@ -1,0 +1,252 @@
+{
+  "ability_method": "标准数组 15,14,13,12,10,8（《玩家手册》第1章）",
+  "level": 1,
+  "xp": 0,
+  "proficiency_bonus": 2,
+  "pregens": {
+    "A": {
+      "id": "A",
+      "name": "卡伦·安卡瑟",
+      "name_en": "Calen Amcathra",
+      "pronouns": "他",
+      "race": "人类（泰瑟尔人）",
+      "class": "战士",
+      "subclass": null,
+      "background": "民间英雄",
+      "alignment": "守序善良",
+      "deity": "坦帕斯（战神，牧场人遇劫时会骂他的名）",
+      "speed": 30,
+      "size": "中型",
+      "hit_dice": "1d10",
+      "hp_max": 12,
+      "hp_current": 12,
+      "ac": 18,
+      "ac_note": "链甲16+盾牌2；战斗风格未选防御故无+1",
+      "abilities": {"str": 16, "dex": 14, "con": 15, "int": 9, "wis": 13, "cha": 11},
+      "saves": {"str": true, "dex": false, "con": true, "int": false, "wis": false, "cha": false},
+      "skills": {
+        "athletics": true,
+        "perception": true,
+        "animal_handling": true,
+        "survival": true
+      },
+      "tools": ["木匠工具", "载具（陆运）"],
+      "languages": ["通用语", "矮人语"],
+      "senses": [],
+      "features": [
+        {"name": "战斗风格：对决", "text": "单手持一把近战武器且未持用其他武器时，该武器伤害+2。"},
+        {"name": "回气", "text": "附赠动作恢复1d10+战士等级HP；短休或长休后刷新。当前：可用。"}
+      ],
+      "feats": [],
+      "maneuvers": [],
+      "maneuvers_note": "战斗大师战技在战士第3级解锁。",
+      "fighting_style": "对决",
+      "spellcasting": null,
+      "equipment": {
+        "worn": ["链甲", "盾牌", "长剑", "轻弩（20矢）", "普通服装"],
+        "weapons": [
+          {"name": "长剑", "atk": "+5", "dmg": "1d8+5 挥砍（对决）", "notes": "单手+盾"},
+          {"name": "轻弩", "atk": "+4", "dmg": "1d8+2 穿刺", "notes": "弹药、装填、双手"}
+        ]
+      },
+      "inventory": ["地城套组", "木匠工具", "铁铲", "铁锅", "钱袋"],
+      "money": {"pp": 0, "gp": 10, "ep": 0, "sp": 0, "cp": 0},
+      "personality": {
+        "trait": "看见欺负牲口或短工的人会先挡上去再问理由。",
+        "ideal": "大家靠双手吃饭，就不该被城里来的买卖人牵着走。",
+        "bond": "安费尔牧场的人曾在荒年把粮食分给过你的村子。",
+        "flaw": "对贵族姓氏过敏，安卡瑟只是你在深水城登记用的化姓。"
+      },
+      "hook": "你从南边走长路而来，想在安费尔找一份护马或修厩的活。牧场主们可能把你当自己人。"
+    },
+    "B": {
+      "id": "B",
+      "name": "伊拉恩·月溪",
+      "name_en": "Iraen Moonsong",
+      "pronouns": "她",
+      "race": "高等精灵（月精灵）",
+      "class": "法师",
+      "subclass": null,
+      "background": "学者",
+      "alignment": "中立善良",
+      "deity": "密斯特拉（魔法女神）与塞伦涅（月之女神，月精灵传统）",
+      "speed": 30,
+      "size": "中型",
+      "hit_dice": "1d6",
+      "hp_max": 7,
+      "hp_current": 7,
+      "ac": 13,
+      "ac_note": "无甲 10+敏捷3；法师护甲后为16",
+      "abilities": {"str": 8, "dex": 16, "con": 13, "int": 16, "wis": 12, "cha": 10},
+      "saves": {"str": false, "dex": false, "con": false, "int": true, "wis": true, "cha": false},
+      "skills": {
+        "arcana": true,
+        "history": true,
+        "investigation": true,
+        "insight": true
+      },
+      "tools": [],
+      "languages": ["通用语", "精灵语", "龙语", "矮人语"],
+      "senses": ["黑暗视觉60尺"],
+      "features": [
+        {"name": "妖精血统", "text": "魅惑豁免优势；魔法无法令你睡眠。"},
+        {"name": "出神", "text": "4小时出神可代替长休睡眠。"},
+        {"name": "戏法（种族）", "text": "次级幻象。"},
+        {"name": "奥术恢复", "text": "每日一次短休，恢复法术位总环数=法师等级/2向上取整（1级即1个1环）。"}
+      ],
+      "feats": [],
+      "maneuvers": [],
+      "maneuvers_note": "非法师项。",
+      "spellcasting": {
+        "ability": "int",
+        "save_dc": 13,
+        "attack": 5,
+        "slots": {"1": {"max": 2, "current": 2}},
+        "cantrips": ["火焰箭", "法师之手", "魔法伎俩", "次级幻象"],
+        "spellbook": ["法师护甲", "护盾术", "魔法飞弹", "侦测魔法", "睡眠术", "通晓语言"],
+        "prepared": ["法师护甲", "护盾术", "魔法飞弹", "睡眠术"]
+      },
+      "equipment": {
+        "worn": ["法师长袍", "法术书", "奥术法器（水晶）", "普通服装"],
+        "weapons": [
+          {"name": "匕首", "atk": "+5", "dmg": "1d4+3 穿刺", "notes": "灵巧、轻型、投掷20/60"},
+          {"name": "火焰箭", "atk": "+5", "dmg": "1d10 火焰", "notes": "戏法，120尺"}
+        ]
+      },
+      "inventory": ["学者套组", "墨水与笔", "一小袋细沙", "钱袋"],
+      "money": {"pp": 0, "gp": 10, "ep": 0, "sp": 0, "cp": 0},
+      "personality": {
+        "trait": "看到看不懂的符号会蹲下去临摹，哪怕周围在吵架。",
+        "ideal": "知识若不分享，就会变成耐瑟瑞尔那种灾难。",
+        "bond": "烛堡的抄写室曾允你摘录一卷关于长路商队死灵谣言的残页。",
+        "flaw": "对「显然未受过教育的人」说话会不自觉变慢，像在教小孩。"
+      },
+      "hook": "你追踪一条关于「会响的铁匣」的边注来到安费尔。对雕像上的痕迹与死灵符号更敏感。"
+    },
+    "C": {
+      "id": "C",
+      "name": "布琳达·石炉",
+      "name_en": "Brinda Stonehearth",
+      "pronouns": "她",
+      "race": "丘陵矮人",
+      "class": "牧师",
+      "subclass": "生命领域",
+      "background": "侍僧",
+      "alignment": "守序中立",
+      "deity": "海姆（守护之神；生命与光明领域建议见《玩家手册》附录B）",
+      "speed": 25,
+      "size": "中型",
+      "hit_dice": "1d8",
+      "hp_max": 12,
+      "hp_current": 12,
+      "ac": 18,
+      "ac_note": "链甲16+盾2（生命领域1级获重甲熟练）",
+      "abilities": {"str": 13, "dex": 12, "con": 16, "int": 8, "wis": 16, "cha": 10},
+      "saves": {"str": false, "dex": false, "con": false, "int": false, "wis": true, "cha": true},
+      "skills": {
+        "insight": true,
+        "religion": true,
+        "medicine": true,
+        "persuasion": true
+      },
+      "tools": ["铁匠工具"],
+      "languages": ["通用语", "矮人语", "天界语"],
+      "senses": ["黑暗视觉60尺"],
+      "features": [
+        {"name": "矮人韧性", "text": "对抗毒素豁免优势；毒素伤害抗性。"},
+        {"name": "石中习性", "text": "与石制结构来源相关的智力（历史）检定加倍熟练（视同专精）。"},
+        {"name": "生命门徒", "text": "用1环及以上法术恢复生命时，额外恢复2+法术环阶。"},
+        {"name": "领域法术", "text": "恒定准备：祝福术、疗伤术。"}
+      ],
+      "feats": [],
+      "maneuvers": [],
+      "maneuvers_note": "非战士项。",
+      "spellcasting": {
+        "ability": "wis",
+        "save_dc": 13,
+        "attack": 5,
+        "slots": {"1": {"max": 2, "current": 2}},
+        "cantrips": ["神圣火焰", "维生术", "奇术"],
+        "prepared": ["祝福术", "疗伤术", "光导箭", "治愈真言", "虔诚护盾", "侦测魔法"],
+        "domain_always_prepared": ["祝福术", "疗伤术"]
+      },
+      "equipment": {
+        "worn": ["链甲", "盾牌", "圣徽（睁开的眼，海姆）", "侍僧袍"],
+        "weapons": [
+          {"name": "战锤", "atk": "+3", "dmg": "1d8+1 钝击", "notes": "两用1d10"},
+          {"name": "神圣火焰", "atk": "DEX DC13 豁免", "dmg": "1d8 光耀", "notes": "60尺，无视掩护"}
+        ]
+      },
+      "inventory": ["牧师套组", "祈祷书", "香", "钱袋"],
+      "money": {"pp": 0, "gp": 15, "ep": 0, "sp": 0, "cp": 0},
+      "personality": {
+        "trait": "守夜时会把盾牌靠在门上，说海姆喜欢听金属轻响。",
+        "ideal": "守护不是占有。看住门，直到该进的人进来、不该进的人离开。",
+        "bond": "深水城海姆神殿派你北上，确认长路商旅的神龛没有被亵渎。",
+        "flaw": "对「我们只是开个玩笑」的亵渎特别没幽默感。"
+      },
+      "hook": "你对亵渎与亡灵痕迹有职业敏感。雕像上的黑痕在你看来不像孩子的恶作剧。"
+    },
+    "D": {
+      "id": "D",
+      "name": "佩林·荆袋",
+      "name_en": "Perrin Bramblepocket",
+      "pronouns": "他",
+      "race": "轻足半身人",
+      "class": "游荡者",
+      "subclass": null,
+      "background": "罪犯",
+      "alignment": "混乱中立",
+      "deity": "泰摩拉（幸运女神）——你只在掷骰前才认真。",
+      "speed": 25,
+      "size": "小型",
+      "hit_dice": "1d8",
+      "hp_max": 9,
+      "hp_current": 9,
+      "ac": 14,
+      "ac_note": "皮甲11+敏捷3",
+      "abilities": {"str": 8, "dex": 17, "con": 13, "int": 12, "wis": 10, "cha": 15},
+      "saves": {"str": false, "dex": true, "con": false, "int": true, "wis": false, "cha": false},
+      "skills": {
+        "stealth": "expertise",
+        "sleight_of_hand": true,
+        "deception": true,
+        "perception": true,
+        "acrobatics": true,
+        "persuasion": true
+      },
+      "tools": ["盗贼工具（专精）", "赌具（骰子）"],
+      "languages": ["通用语", "半身人语", "盗贼黑话"],
+      "senses": [],
+      "features": [
+        {"name": "幸运", "text": "d20掷1时可重掷，必须采用新结果。"},
+        {"name": "勇敢", "text": "对抗恐慌豁免优势。"},
+        {"name": "半身人灵巧", "text": "可穿过比你体型大的生物占据空间。"},
+        {"name": "天生隐匿", "text": "可在体型比你大至少一级的盟友身后试图躲藏。"},
+        {"name": "专精", "text": "隐匿与盗贼工具的熟练加值加倍。"},
+        {"name": "偷袭 1d6", "text": "每回合一次；需优势或盟友在目标5尺内且你无劣势。"},
+        {"name": "盗贼黑话", "text": "行话与隐秘标记。"}
+      ],
+      "feats": [],
+      "maneuvers": [],
+      "maneuvers_note": "盗贼范型与更多技巧在第3级。",
+      "spellcasting": null,
+      "equipment": {
+        "worn": ["皮甲", "风帽斗篷", "深色普通服装"],
+        "weapons": [
+          {"name": "细剑", "atk": "+5", "dmg": "1d8+3 穿刺", "notes": "灵巧；偷袭+1d6"},
+          {"name": "短弓", "atk": "+5", "dmg": "1d6+3 穿刺", "notes": "80/320，20箭"}
+        ]
+      },
+      "inventory": ["盗贼工具", "开撬套组", "撬棍", "钱袋", "一张未具名的深水城欠条"],
+      "money": {"pp": 0, "gp": 15, "ep": 0, "sp": 0, "cp": 0},
+      "personality": {
+        "trait": "先看谁的口袋最鼓，再决定要不要当英雄。",
+        "ideal": "自由就是没人能把你的名字写在通缉名单第一行。",
+        "bond": "你欠码头区一个半身人老太太一条命——她让你滚出深水城「去北边呼吸」。",
+        "flaw": "看到没上锁的车就会手痒，哪怕理智说现在不该偷。"
+      },
+      "hook": "你注意到广场边那辆篷布过新的马车，以及巷口那个假装看雕像的兜帽人。"
+    }
+  }
+}

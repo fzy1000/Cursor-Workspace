@@ -1,0 +1,102 @@
+{
+  "campaign": "长路暮铃",
+  "edition": "D&D 5e",
+  "session": 0,
+  "turn": 0,
+  "calendar": {
+    "year_dr": 1492,
+    "year_name": "三帆起航之年",
+    "month": "Mirtul",
+    "month_cn": "融月",
+    "day": 12,
+    "time_of_day": "黄昏",
+    "note": "费伦历：融月约合暮春。据《城主指南》货币范例，深水城金币俗称龙币。"
+  },
+  "location": {
+    "region": "费伦 / 剑湾 / 长路",
+    "place": "安费尔村 · 马兰德道口广场",
+    "place_en": "Amphail, the Malanderways"
+  },
+  "player_character_id": null,
+  "flags": {
+    "character_created": false,
+    "entered_stag_flagon": false,
+    "examined_shalarn": false,
+    "spoke_to_hask": false,
+    "spoke_to_renn": false,
+    "noticed_wagon": false,
+    "met_selene": false,
+    "met_vask": false,
+    "goblins_hostile": false,
+    "goblins_allied": false,
+    "statue_desecration_understood": false,
+    "silverwind_status": "missing"
+  },
+  "clocks": {
+    "missing_horses": 3,
+    "zhent_wagon": 1,
+    "myrkul_casket": 0,
+    "grayveil_arrival": 0
+  },
+  "factions": {
+    "竖琴手同盟": 0,
+    "领主联盟": 0,
+    "散塔林会": 0,
+    "铁手教团": 0,
+    "翠绿闲庭": 0
+  },
+  "npcs": {
+    "arleosa": {
+      "name": "阿勒奥萨·星炉",
+      "role": "鹿角酒壶老板",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": false
+    },
+    "renn": {
+      "name": "伦恩·维尔达伍长",
+      "role": "深水城卫队（拉萨兰塔巡逻）",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": false
+    },
+    "hask": {
+      "name": "哈斯克·安布尔克朗",
+      "role": "牧场主，银风的主人",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": false
+    },
+    "selene": {
+      "name": "塞琳·羽琴",
+      "role": "旅客（竖琴手代理人，未公开）",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": false
+    },
+    "vask": {
+      "name": "瓦斯克·赫瑞尔",
+      "role": "自称米拉巴马商",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": false
+    },
+    "snitch": {
+      "name": "偷耳",
+      "role": "哥布林斥候",
+      "attitude": "hostile",
+      "score": -1,
+      "alive": true,
+      "known_to_player": false
+    }
+  },
+  "unused_pregens_as_npcs": [],
+  "inspiration": false,
+  "last_dice": [],
+  "notes_public": "角色尚未选定。广场上的争执与雕像黑痕会因你是谁、先跟谁说话而走向不同分支。"
+}
