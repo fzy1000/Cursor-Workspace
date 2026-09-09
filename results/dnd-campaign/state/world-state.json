@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 10,
+  "turn": 11,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "旧书阁内室",
+    "place": "村庄市集／交易地",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -46,7 +46,11 @@
     "ray_of_frost_hit_2": true,
     "ray_of_frost_hit_3": true,
     "pending_lucky": false,
-    "grim_defeated": true
+    "grim_defeated": true,
+    "packed_loft_loot": true,
+    "sold_scimitar": true,
+    "sold_leather": true,
+    "visited_village_market": true
   },
   "pending": null,
   "clocks": {
@@ -96,6 +100,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。出售：弯刀市价25gp半价12gp5sp；皮甲市价10gp半价5gp。PHB PDF约p144、p145、p149。"
+    },
     {
       "notation": "d100",
       "rolls": [72],
@@ -251,10 +264,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 10,
-    "declared": "搜他的身，查看所有物品，然后进入房间搜索探查",
-    "loot": "资料卡：皮甲、弯刀。个体宝藏8gp。特定物品：末页=护盾术。圣徽认出莎尔。内室调查成功：案上缺页手稿与未干抄页。",
-    "copy": "抄入法术书每环2小时与50gp。1环即2小时50gp。现17gp2sp，不够。"
+    "turn": 11,
+    "declared": "收拾所有东西，去商店看能买什么，卖掉刀和皮甲",
+    "sale": "弯刀半价12gp5sp，皮甲半价5gp。17gp2sp→34gp7sp。圣徽与手稿未售。",
+    "shop": "村庄：日常用品在旅馆或交易地；其余须旅行商人。DMG PDF约p17。"
   },
-  "notes_public": "末页是护盾术。衣里有带边的黑盘子，是莎尔的圣徽。内室案上还有他未抄完的同一页。钱加了 8 gp。"
+  "notes_public": "刀和皮甲卖了，现有 34 gp 7 sp。村里摊上只有日用品。抄护盾术还差钱。"
 }
