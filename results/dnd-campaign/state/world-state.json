@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 14,
+  "turn": 15,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路上的小镇（DMG小镇块；未取专名）",
-    "place": "小镇旅店，已打听过神庙",
+    "place": "小镇西市集外，货队停处",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -59,7 +59,10 @@
     "asked_lureene_wizard_college": true,
     "traveled_trade_road": true,
     "arrived_road_town": true,
-    "asked_town_wizard_college": true
+    "asked_town_wizard_college": true,
+    "asked_town_caravan": true,
+    "found_westbound_caravan": true,
+    "caravan_seat_offered": true
   },
   "pending": null,
   "clocks": {
@@ -97,6 +100,15 @@
       "alive": true,
       "known_to_player": true
     },
+    "gorstag": {
+      "name": "戈尔斯塔格",
+      "role": "西行货主（旅行商人）",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true,
+      "last_told": "黎明沿商路向西开。自己管饭、夜里轮一更，车上有空位。往西能接到更大的城，商人常提深水城。未报精确天数，未收车资。"
+    },
     "grim": {
       "name": "格里姆·巴克曼",
       "role": "反派（类人邪教徒，扮抄写人）",
@@ -126,6 +138,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [9],
+      "modifier": 5,
+      "total": 14,
+      "dc": 12,
+      "success": true,
+      "note": "智力（调查）打听西行货队。先定DC12。调查熟练+5。PHB第7章常用难度；DMG小镇有外来货与旅行商人，约p17。未写本镇至深水城里数，不自拟日程；无商队票价表，不自拟车资。"
+    },
     {
       "notation": "none",
       "rolls": [],
@@ -317,10 +338,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 14,
-    "declared": "沿商路去更大的镇子打听",
-    "travel": "普通步调商路。路宿长休。口粮-1日。到镇俭朴住宿5sp。法师护甲到期。法术位2/2。未再施护甲。",
-    "ask": "珊德瑞：本镇无学院，指向欧格玛神庙。兰德尔：本镇无收徒学院；大城才有塔楼学院，听过深水城。抄法50gp仍不够。"
+    "turn": 15,
+    "declared": "在本镇打听去深水城的商队或正规结伴，准备一起走",
+    "ask": "调查14对DC12成功。西市集外戈尔斯塔格两辆货车，黎明西行。自己管饭、夜里轮值。方向往西，商人称能接到深水城那条路。未出发、未收车资。",
+    "remain": "今夜旅店已付。护盾术未抄入。法师护甲未再施。"
   },
-  "notes_public": "到了商路上座没名字的镇子。没有法师学院。欧格玛神庙让你再往大城走。法师护甲散了。"
+  "notes_public": "打听到一支西行货队，黎明开。自己管饭、夜里帮着守更。他们往西走，说能接到去深水城的路。今夜还在镇上。"
 }
