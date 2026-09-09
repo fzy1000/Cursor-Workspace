@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 1,
+  "turn": 2,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,13 +13,15 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "村里的旅店，薄暮",
+    "place": "林东旧书阁外，清晨",
     "place_en": null
   },
   "player_character_id": "feng",
   "flags": {
     "character_created": true,
-    "heard_loft_lantern": false,
+    "heard_loft_lantern": true,
+    "slept_at_inn": true,
+    "mage_armor_active": true,
     "read_letter_aloud": false,
     "entered_loft": false,
     "folio_seen": false,
@@ -29,10 +31,10 @@
   },
   "clocks": {
     "grim_copying": {
-      "label": "格里姆还在阁楼上赶抄末页（今夜结束前）",
-      "value": 0,
+      "label": "格里姆赶抄／收束末页（过夜后已近完成）",
+      "value": 2,
       "max": 3,
-      "note": "玩家拖延则推进。满则他撕走末页离开。"
+      "note": "玩家选择过夜，时钟+2。满则他撕走末页离开。当前：内门顶住，人还在内室收束。"
     }
   },
   "factions": {},
@@ -43,7 +45,7 @@
       "attitude": "friendly",
       "score": 1,
       "alive": true,
-      "known_to_player": false
+      "known_to_player": true
     },
     "grim": {
       "name": "格里姆·巴克曼",
@@ -57,5 +59,13 @@
   "unused_pregens_as_npcs": [],
   "inspiration": false,
   "last_dice": [],
-  "notes_public": "你从卡拉图西行。腰间那封去世同事的信，要你核对手稿末页。旅店炉火已生。林边那座旧书阁的事，店里的人比你先看见灯。"
+  "last_resolution": {
+    "turn": 2,
+    "declared": "在店里过夜，施展法师护甲，第二天再去",
+    "checks": "无检定。长休与施法按规则自动成立。",
+    "lodging": "俭朴住宿5 sp + 俭朴当日餐膳3 sp = 8 sp。PHB「饮食与住宿」PDF约p158。",
+    "mage_armor": "长休结束后出门前施放（持续8小时）。若睡前施放，八小时会在醒来时结束。PHB法术篇PDF约p256；长休中激烈活动须超过1小时才打断，单次1动作施法不打断。PHB第8章PDF约p186。",
+    "clock": "过夜使 grim_copying 0→2。"
+  },
+  "notes_public": "你在旅店过了一夜。黎明前，林东书阁的灯灭了。出门前你罩上法师护甲。现在你站在阁外。"
 }

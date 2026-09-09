@@ -2,7 +2,7 @@
   "selected": true,
   "id": "feng",
   "name": "冯",
-  "conditions": [],
+  "conditions": ["法师护甲（出门时施放，持续8小时）"],
   "exhaustion": 0,
   "death_saves": {"success": 0, "fail": 0},
   "inspiration": false,
@@ -10,6 +10,11 @@
   "level": 1,
   "hp_current": 7,
   "luck_points": {"current": 3, "max": 3},
+  "mage_armor": {
+    "active": true,
+    "duration_hours": 8,
+    "source": "materials/dnd-5e-三宝书/DND_5E_玩家手册CN.pdf 法术「法师护甲」，PDF约p256"
+  },
   "notes": [
     "姓名「冯」由玩家指定。手册受国姓氏举例为犬、黄、高、宫、劳、林、梅、彬、申、森、谭、万（PHB PDF约p31），冯不在举例中，仍按玩家所用。受国姓在名前。",
     "三宝书标准语言表无卡拉图／受国语。种族额外语言按表选龙语。",
@@ -31,8 +36,8 @@
     "hit_dice": "1d6",
     "hp_max": 7,
     "hp_current": 7,
-    "ac": 12,
-    "ac_note": "无甲 10+敏捷2；法师护甲后为15",
+    "ac": 15,
+    "ac_note": "法师护甲：基础AC 13+敏捷2；未着装护甲。持续时间8小时（《玩家手册》法术篇，PDF约p256）",
     "abilities": {"str": 8, "dex": 15, "con": 13, "int": 16, "wis": 12, "cha": 10},
     "ability_note": "标准数组15/14/13/12/10/8；变体人类智力、敏捷各+1。出处：PHB第1章、第2章变体人类。",
     "saves": {"str": false, "dex": false, "con": false, "int": true, "wis": true, "cha": false},
@@ -77,7 +82,7 @@
       "ability": "int",
       "save_dc": 13,
       "attack": 5,
-      "slots": {"1": {"max": 2, "current": 2}},
+      "slots": {"1": {"max": 2, "current": 1}},
       "cantrips": ["光亮术", "法师之手", "冷冻射线"],
       "spellbook": ["燃烧之手", "魅惑人类", "羽落术", "法师护甲", "魔法飞弹", "睡眠术"],
       "prepared": ["法师护甲", "魔法飞弹", "睡眠术", "魅惑人类"]
@@ -97,7 +102,7 @@
       "去世同事的信件（内有你尚未解答的问题）",
       "钱袋"
     ],
-    "money": {"pp": 0, "gp": 10, "ep": 0, "sp": 0, "cp": 0},
+    "money": {"pp": 0, "gp": 9, "ep": 0, "sp": 2, "cp": 0},
     "personality": {
       "trait": "没有什么能比一个有趣的谜团更令我欢心。",
       "ideal": "无拘无束：任何东西都不该束缚所有存在中潜在的无限可能。（混乱）",
