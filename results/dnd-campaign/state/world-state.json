@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 8,
+  "turn": 9,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "旧书阁外室，战斗中",
+    "place": "旧书阁外室往林径退，战斗中（待幸运）",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -39,7 +39,38 @@
     "charm_person_succeeded": false,
     "combat": true,
     "ray_of_frost_hit": true,
-    "ray_of_frost_hit_2": true
+    "ray_of_frost_hit_2": true,
+    "pending_lucky": true
+  },
+  "pending": {
+    "kind": "lucky_on_attack_against",
+    "turn": 9,
+    "declared": "拉开距离，再射冷冻射线",
+    "note": "上一发减速在冯第3轮开始时已结束。离开触及引发借机攻击。幸运：掷完、结果确定前可花1点再骰d20并自选。PHB PDF约p167、第9章借机攻击。",
+    "oa": {
+      "notation": "d20",
+      "rolls": [15],
+      "modifier": 3,
+      "total": 18,
+      "ac": 15,
+      "would_hit": true,
+      "damage_dice": [2],
+      "damage_modifier": 1,
+      "damage_if_confirmed": 3
+    },
+    "after_if_conscious": {
+      "move": "向北退出外门，林径上距他约25尺",
+      "ray": {
+        "notation": "d20",
+        "rolls": [16],
+        "modifier": 5,
+        "total": 21,
+        "ac": 12,
+        "hit": true,
+        "damage": 3,
+        "grim_hp_after": 0
+      }
+    }
   },
   "clocks": {
     "grim_copying": {
@@ -72,7 +103,7 @@
   "inspiration": false,
   "combat": {
     "round": 3,
-    "whose_turn": "feng",
+    "whose_turn": "feng_pending_lucky_oa",
     "initiative": [
       {"id": "grim", "total": 19, "note": "d20=18+1"},
       {"id": "feng", "total": 9, "note": "d20=7+2"}
@@ -87,6 +118,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [15],
+      "modifier": 3,
+      "total": 18,
+      "dc": 15,
+      "success": null,
+      "note": "格里姆借机攻击 vs AC15。已掷未公布是否命中，待冯是否花幸运。PHB PDF约p167。"
+    },
     {
       "notation": "d20",
       "rolls": [10],
@@ -179,10 +219,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 8,
-    "declared": "冷冻射线",
-    "spell": "戏法，未扣环位。退一步后远程法术攻击10+5=15命中AC12。伤害2寒冷。减速至冯下回合开始，现已到期。",
-    "combat": "格里姆HP3/9。其第3轮弯刀2+3=5未中。现为冯第3轮。"
+    "turn": 9,
+    "declared": "拉开距离，再射冷冻射线",
+    "spell": "尚未结算。待幸运决定借机攻击是否命中。",
+    "combat": "冯离开触及。借机攻击d20=15+3=18，未定。冷冻射线已预掷，不对玩家公布。"
   },
-  "notes_public": "第二发冷冻射线又打中。人还站着，刀第三次没砍中。轮到你。"
+  "notes_public": "你往外门退时，他顺手砍来。这一刀的骰子已经出了，还没定是否砍中。问你要不要用幸运。"
 }
