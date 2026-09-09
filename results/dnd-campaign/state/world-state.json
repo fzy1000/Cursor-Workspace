@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 11,
+  "turn": 12,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "村庄市集／交易地",
+    "place": "村里旅店",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -50,7 +50,10 @@
     "packed_loft_loot": true,
     "sold_scimitar": true,
     "sold_leather": true,
-    "visited_village_market": true
+    "visited_village_market": true,
+    "bought_week_rations": true,
+    "copy_materials_unbought": true,
+    "asked_lureene_today": true
   },
   "pending": null,
   "clocks": {
@@ -69,7 +72,8 @@
       "attitude": "friendly",
       "score": 1,
       "alive": true,
-      "known_to_player": true
+      "known_to_player": true,
+      "last_told": "今日村里未见异常；灯是昨夜近黎明灭的；店里没收过抄写人住店；阁主她说不清。"
     },
     "grim": {
       "name": "格里姆·巴克曼",
@@ -100,6 +104,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。口粮7×5sp=35sp。抄法材料50gp买不到也买不起。友善NPC路伊蒽提供已知村情。PHB PDF约p150、p114、第8章；DMG PDF约p17。"
+    },
     {
       "notation": "none",
       "rolls": [],
@@ -264,10 +277,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 11,
-    "declared": "收拾所有东西，去商店看能买什么，卖掉刀和皮甲",
-    "sale": "弯刀半价12gp5sp，皮甲半价5gp。17gp2sp→34gp7sp。圣徽与手稿未售。",
-    "shop": "村庄：日常用品在旅馆或交易地；其余须旅行商人。DMG PDF约p17。"
+    "turn": 12,
+    "declared": "买一周口粮、买抄法术材料、回旅店向路伊蒽打探今日相关情报",
+    "buy": "口粮7日 3gp5sp。34gp7sp→31gp2sp。抄法50gp材料：村无货且钱不够，未购。",
+    "talk": "路伊蒽友善。她不知书阁打斗、不知莎尔与护盾术。灯近黎明已灭；店里没收抄写人；阁主说不清。"
   },
-  "notes_public": "刀和皮甲卖了，现有 34 gp 7 sp。村里摊上只有日用品。抄护盾术还差钱。"
+  "notes_public": "买了七天口粮。抄法材料这里没有，钱也不够。路伊蒽只知道灯灭了、店里没住过抄写人。阁上的事她没看见。"
 }
