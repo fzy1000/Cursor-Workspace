@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 3,
+  "turn": 4,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -27,6 +27,7 @@
     "entered_inner": false,
     "observed_before_knock": true,
     "knocked_inner_door": true,
+    "talked_with_grim": true,
     "folio_seen": false,
     "grim_known": true,
     "grim_fled": false,
@@ -65,29 +66,29 @@
   "last_dice": [
     {
       "notation": "d20",
-      "rolls": [17],
+      "rolls": [3],
       "modifier": 3,
-      "total": 20,
-      "dc": 10,
-      "success": true,
-      "note": "感知（察觉）观察环境。DC10容易。PHB第7章常用难度，PDF约p174；外室听声预置DC10。"
+      "total": 6,
+      "dc": null,
+      "success": null,
+      "note": "冯 感知（洞悉）。对抗，无DC。"
     },
     {
       "notation": "d20",
-      "rolls": [3],
-      "modifier": 5,
-      "total": 8,
-      "dc": 12,
-      "success": false,
-      "note": "智力（调查）检视痕迹。DC12。失败不挡路，少预告。PHB第7章PDF约p174。"
+      "rolls": [4],
+      "modifier": 2,
+      "total": 6,
+      "dc": null,
+      "success": null,
+      "note": "格里姆 魅力（欺瞒）。邪教徒资料卡欺瞒+2。MM PDF约p332。"
     }
   ],
   "last_resolution": {
-    "turn": 3,
-    "declared": "先观察环境，然后敲门",
-    "perception": "17+3=20 vs DC10 成功",
-    "investigation": "3+5=8 vs DC12 失败",
-    "knock": "无检定。惊动内室；他将末页入怀后应门。社交仍冷漠。"
+    "turn": 4,
+    "declared": "和他对话",
+    "pc_words": "未指定逐句对白。按既定来意：说明自己也是为这册手稿、要看末页。未宣读陈的信。",
+    "insight_contest": "6对6，平。对抗平局则情况不变。PHB第7章PDF约p174。",
+    "social": "冷漠。肯说话，不让路，不交怀里的页。"
   },
-  "notes_public": "你进了书阁外间，敲了里间的门。门后只有一个自称格里姆·巴克曼的人。敲门时你听见有纸被塞进衣服。门缝里，案上的手稿缺了最外面一页。"
+  "notes_public": "你跟格里姆说了：自己也是为这册手稿来的，要看末页。他说末页来时就没有，只抄过目录，并让你隔着门缝看案上的书。他仍挡在门口。他的话听不出破绽；敲门时那一下折纸，你还记得。"
 }
