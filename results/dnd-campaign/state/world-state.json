@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 17,
+  "turn": 18,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -67,7 +67,8 @@
     "caravan_looks_ordinary": true,
     "agreed_caravan_dawn": true,
     "joined_westbound_caravan": true,
-    "mage_armor_cast_at_departure": true
+    "mage_armor_cast_at_departure": true,
+    "talked_with_gorstag_on_wagon": true
   },
   "pending": null,
   "caravan": {
@@ -121,7 +122,7 @@
       "score": 0,
       "alive": true,
       "known_to_player": true,
-      "last_told": "冯答应黎明同行。自己管饭、夜里轮一更。未收车资。未报精确天数。"
+      "last_told": "车上闲聊：货是布和干货；往西走这条路的人常提深水城，不报哪天进城。问冯是不是读书人。夜里守更到了再说。未收车资。"
     },
     "darvin": {
       "name": "达文",
@@ -172,6 +173,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。冷漠货主已允同行，车上闲聊不另定DC。PHB第8章。未报深水城里数、学院专名、车资。"
+    },
     {
       "notation": "none",
       "rolls": [],
@@ -390,11 +400,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 17,
-    "declared": "答应第二天走，出门前再施法师护甲",
-    "rest": "旅店长休，住宿已付。法术位先恢复2/2。",
-    "cast": "黎明法师护甲，1环余1/2，AC15，8小时。",
-    "travel": "随货队刚出镇向西。未报深水城里数。未掷荒野遭遇。口粮6→5。"
+    "turn": 18,
+    "declared": "在车上跟货主聊聊天",
+    "talk": "戈尔斯塔格：货是布和干货；往西常提深水城，不保证进城日。问冯是不是读书人。守更到了再说。",
+    "remain": "法师护甲仍在（黎明施的，约撑到午后）。1环1/2。未跳过赶路。"
   },
-  "notes_public": "你答应跟戈尔斯塔格的货队走。店里睡了一夜，天亮施了法师护甲，车已出镇向西。护甲撑不到天黑。"
+  "notes_public": "你在车上和戈尔斯塔格闲聊。他运布和干货，往西走，说不准哪天进城。他问你是不是读书人。护甲大约还能撑到午后。"
 }
