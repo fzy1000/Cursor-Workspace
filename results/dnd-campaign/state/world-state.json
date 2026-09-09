@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 7,
+  "turn": 8,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -38,7 +38,8 @@
     "charm_person_cast": true,
     "charm_person_succeeded": false,
     "combat": true,
-    "ray_of_frost_hit": true
+    "ray_of_frost_hit": true,
+    "ray_of_frost_hit_2": true
   },
   "clocks": {
     "grim_copying": {
@@ -70,7 +71,7 @@
   "unused_pregens_as_npcs": [],
   "inspiration": false,
   "combat": {
-    "round": 2,
+    "round": 3,
     "whose_turn": "feng",
     "initiative": [
       {"id": "grim", "total": 19, "note": "d20=18+1"},
@@ -78,14 +79,41 @@
     ],
     "grim": {
       "ac": 12,
-      "hp_current": 5,
+      "hp_current": 3,
       "hp_max": 9,
       "speed": 30,
       "speed_reduced": false,
-      "note": "邪教徒资料卡，MM PDF约p332。冷冻射线伤害4。减速已于冯第2轮开始时结束。"
+      "note": "邪教徒资料卡，MM PDF约p332。累计寒冷6。减速已于冯第3轮开始时结束。"
     }
   },
   "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [10],
+      "modifier": 5,
+      "total": 15,
+      "dc": 12,
+      "success": true,
+      "note": "第二发冷冻射线法术攻击 vs AC12。戏法，未扣环位。PHB PDF约p271。"
+    },
+    {
+      "notation": "1d8",
+      "rolls": [2],
+      "modifier": 0,
+      "total": 2,
+      "dc": null,
+      "success": null,
+      "note": "冷冻射线寒冷伤害。格里姆HP 5→3。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [2],
+      "modifier": 3,
+      "total": 5,
+      "dc": 15,
+      "success": false,
+      "note": "格里姆第3轮弯刀 vs 法师护甲AC15"
+    },
     {
       "notation": "d20",
       "rolls": [19],
@@ -151,10 +179,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 7,
-    "declared": "使用冷冻射线",
-    "spell": "戏法，V/S，60尺。退一步后远程法术攻击19+5=24命中AC12。伤害4寒冷。目标速度-10至冯下回合开始；现已到期。",
-    "combat": "格里姆HP5/9。其第2轮弯刀6+3=9未中。现为冯第2轮。"
+    "turn": 8,
+    "declared": "冷冻射线",
+    "spell": "戏法，未扣环位。退一步后远程法术攻击10+5=15命中AC12。伤害2寒冷。减速至冯下回合开始，现已到期。",
+    "combat": "格里姆HP3/9。其第3轮弯刀2+3=5未中。现为冯第3轮。"
   },
-  "notes_public": "冷冻射线打中他。霜还挂在袖口上，人没倒下。他又砍一刀，没砍中。轮到你。"
+  "notes_public": "第二发冷冻射线又打中。人还站着，刀第三次没砍中。轮到你。"
 }
