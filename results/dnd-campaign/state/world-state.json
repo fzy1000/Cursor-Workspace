@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 15,
+  "turn": 16,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -62,9 +62,20 @@
     "asked_town_wizard_college": true,
     "asked_town_caravan": true,
     "found_westbound_caravan": true,
-    "caravan_seat_offered": true
+    "caravan_seat_offered": true,
+    "observed_caravan": true,
+    "caravan_looks_ordinary": true
   },
   "pending": null,
+  "caravan": {
+    "merchant": "戈尔斯塔格",
+    "guards_unannounced": ["达文", "安德"],
+    "people": 3,
+    "wagons": 2,
+    "draft_horses": 4,
+    "anomaly": false,
+    "note": "第16轮察觉22对DC12锁定。货箱寻常商货。无藏人。姓名未向玩家报出。"
+  },
   "clocks": {
     "grim_copying": {
       "label": "末页已取回，陈的问句已能回答",
@@ -109,6 +120,26 @@
       "known_to_player": true,
       "last_told": "黎明沿商路向西开。自己管饭、夜里轮一更，车上有空位。往西能接到更大的城，商人常提深水城。未报精确天数，未收车资。"
     },
+    "darvin": {
+      "name": "达文",
+      "role": "货队雇工",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true,
+      "name_told": false,
+      "last_told": "第16轮被看见：带刀、守车。姓名未报。"
+    },
+    "ander": {
+      "name": "安德",
+      "role": "货队雇工",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true,
+      "name_told": false,
+      "last_told": "第16轮被看见：带刀、守车。姓名未报。"
+    },
     "grim": {
       "name": "格里姆·巴克曼",
       "role": "反派（类人邪教徒，扮抄写人）",
@@ -138,6 +169,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [19],
+      "modifier": 3,
+      "total": 22,
+      "dc": 12,
+      "success": true,
+      "note": "感知（察觉）观察货队。先定DC12。当面三人可数不另掷。察觉熟练+3。PHB第7章。无第二条反派线。"
+    },
     {
       "notation": "d20",
       "rolls": [9],
@@ -338,10 +378,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 15,
-    "declared": "在本镇打听去深水城的商队或正规结伴，准备一起走",
-    "ask": "调查14对DC12成功。西市集外戈尔斯塔格两辆货车，黎明西行。自己管饭、夜里轮值。方向往西，商人称能接到深水城那条路。未出发、未收车资。",
-    "remain": "今夜旅店已付。护盾术未抄入。法师护甲未再施。"
+    "turn": 16,
+    "declared": "观察车队情况，有多少人，有没有异常",
+    "observe": "当面三人两车。察觉22对DC12成功：四匹挽马，车底无人，货捆寻常，无第四人脚印，未见圣徽或夹层。",
+    "remain": "今夜旅店已付。护盾术未抄入。法师护甲未再施。未出发。"
   },
-  "notes_public": "打听到一支西行货队，黎明开。自己管饭、夜里帮着守更。他们往西走，说能接到去深水城的路。今夜还在镇上。"
+  "notes_public": "货队是三个人、两辆车、四匹马。看过车底和货捆，没有不对的地方。黎明开。今夜还在镇上。"
 }
