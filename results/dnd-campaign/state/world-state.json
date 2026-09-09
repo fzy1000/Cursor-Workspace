@@ -5,15 +5,15 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 13,
+  "turn": 14,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
     "note": "三宝书未写明本场战役年份，不自拟 DR 纪年。"
   },
   "location": {
-    "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "村里旅店",
+    "region": "费伦西行商路上的小镇（DMG小镇块；未取专名）",
+    "place": "小镇旅店，已打听过神庙",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -21,7 +21,7 @@
     "character_created": true,
     "heard_loft_lantern": true,
     "slept_at_inn": true,
-    "mage_armor_active": true,
+    "mage_armor_active": false,
     "read_letter_aloud": false,
     "entered_loft": true,
     "entered_inner": true,
@@ -56,7 +56,10 @@
     "asked_lureene_today": true,
     "copy_shield_failed_no_gold": true,
     "wrote_chen_reply": true,
-    "asked_lureene_wizard_college": true
+    "asked_lureene_wizard_college": true,
+    "traveled_trade_road": true,
+    "arrived_road_town": true,
+    "asked_town_wizard_college": true
   },
   "pending": null,
   "clocks": {
@@ -77,6 +80,22 @@
       "alive": true,
       "known_to_player": true,
       "last_told": "村里没有法师学院。过路商人提过大城（她听过深水城这个名字）。学院的名她叫不出。抄写人没收过。"
+    },
+    "randall": {
+      "name": "兰德尔·格莱卡索",
+      "role": "小镇欧格玛神庙司事（知识）",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true
+    },
+    "shandri": {
+      "name": "珊德瑞·托斯汀",
+      "role": "小镇旅店主事",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true
     },
     "grim": {
       "name": "格里姆·巴克曼",
@@ -107,6 +126,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无遭遇掷骰。商路一日程至最近小镇（DMG村庄供养附近城镇；未写里数与镇名）。路宿为长休。PHB PDF约p181–p182、约p158；DMG PDF约p17。"
+    },
     {
       "notation": "none",
       "rolls": [],
@@ -289,11 +317,10 @@
     }
   ],
   "last_resolution": {
-    "turn": 13,
-    "declared": "学习新法术；写信告诉同事；向路伊蒽打听周围哪里可进修法师、去学院",
-    "copy": "未抄入。须2小时与50gp。现31gp2sp，村无上好墨水。",
-    "letter": "已写回信：末页是护盾术。陈已去世，材料无投递地址，信在包里。",
-    "college": "路伊蒽不知学院。研究员指向大城市的图书馆/学院，可能远。不编造具体学院名。"
+    "turn": 14,
+    "declared": "沿商路去更大的镇子打听",
+    "travel": "普通步调商路。路宿长休。口粮-1日。到镇俭朴住宿5sp。法师护甲到期。法术位2/2。未再施护甲。",
+    "ask": "珊德瑞：本镇无学院，指向欧格玛神庙。兰德尔：本镇无收徒学院；大城才有塔楼学院，听过深水城。抄法50gp仍不够。"
   },
-  "notes_public": "护盾术还没进法术书，缺钱和料。信写好了，寄不出去。路伊蒽不知道哪有法师学院。"
+  "notes_public": "到了商路上座没名字的镇子。没有法师学院。欧格玛神庙让你再往大城走。法师护甲散了。"
 }
