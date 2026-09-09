@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "旧书阁外室往林径退，战斗中（待幸运）",
+    "place": "旧书阁外室，战斗结束",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -37,44 +37,17 @@
     "last_page_on_grim": true,
     "charm_person_cast": true,
     "charm_person_succeeded": false,
-    "combat": true,
+    "combat": false,
     "ray_of_frost_hit": true,
     "ray_of_frost_hit_2": true,
-    "pending_lucky": true
+    "ray_of_frost_hit_3": true,
+    "pending_lucky": false,
+    "grim_defeated": true
   },
-  "pending": {
-    "kind": "lucky_on_attack_against",
-    "turn": 9,
-    "declared": "拉开距离，再射冷冻射线",
-    "note": "上一发减速在冯第3轮开始时已结束。离开触及引发借机攻击。幸运：掷完、结果确定前可花1点再骰d20并自选。PHB PDF约p167、第9章借机攻击。",
-    "oa": {
-      "notation": "d20",
-      "rolls": [15],
-      "modifier": 3,
-      "total": 18,
-      "ac": 15,
-      "would_hit": true,
-      "damage_dice": [2],
-      "damage_modifier": 1,
-      "damage_if_confirmed": 3
-    },
-    "after_if_conscious": {
-      "move": "向北退出外门，林径上距他约25尺",
-      "ray": {
-        "notation": "d20",
-        "rolls": [16],
-        "modifier": 5,
-        "total": 21,
-        "ac": 12,
-        "hit": true,
-        "damage": 3,
-        "grim_hp_after": 0
-      }
-    }
-  },
+  "pending": null,
   "clocks": {
     "grim_copying": {
-      "label": "格里姆已把末页收进怀里，人还在门口",
+      "label": "格里姆已倒下，末页仍在衣襟里",
       "value": 3,
       "max": 3,
       "note": "敲门惊动他：末页离案入怀。人未走，高潮变为当面要页。"
@@ -95,7 +68,7 @@
       "role": "反派（类人邪教徒，扮抄写人）",
       "attitude": "hostile",
       "score": -2,
-      "alive": true,
+      "alive": false,
       "known_to_player": true
     }
   },
@@ -103,21 +76,40 @@
   "inspiration": false,
   "combat": {
     "round": 3,
-    "whose_turn": "feng_pending_lucky_oa",
+    "whose_turn": null,
+    "ended": true,
     "initiative": [
       {"id": "grim", "total": 19, "note": "d20=18+1"},
       {"id": "feng", "total": 9, "note": "d20=7+2"}
     ],
     "grim": {
       "ac": 12,
-      "hp_current": 3,
+      "hp_current": 0,
       "hp_max": 9,
       "speed": 30,
       "speed_reduced": false,
-      "note": "邪教徒资料卡，MM PDF约p332。累计寒冷6。减速已于冯第3轮开始时结束。"
+      "note": "邪教徒资料卡，MM PDF约p332。第三发冷冻射线7寒冷，HP 3→0。XP 25（图鉴挑战1/8）。"
     }
   },
   "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [8, 12, 8],
+      "modifier": 5,
+      "total": 13,
+      "dc": 12,
+      "success": true,
+      "note": "贴身冷冻射线，劣势（5尺内敌对）。两粒取低8。8+5=13命中AC12。戏法未扣环位。PHB第9章、PDF约p271。"
+    },
+    {
+      "notation": "1d8",
+      "rolls": [7],
+      "modifier": 0,
+      "total": 7,
+      "dc": null,
+      "success": null,
+      "note": "冷冻射线寒冷伤害。格里姆HP 3→0。"
+    },
     {
       "notation": "d20",
       "rolls": [15],
@@ -125,7 +117,7 @@
       "total": 18,
       "dc": 15,
       "success": null,
-      "note": "格里姆借机攻击 vs AC15。已掷未公布是否命中，待冯是否花幸运。PHB PDF约p167。"
+      "note": "借机攻击已掷但玩家改声明不离开触及，此骰作废，未命中也未伤害。"
     },
     {
       "notation": "d20",
@@ -220,9 +212,9 @@
   ],
   "last_resolution": {
     "turn": 9,
-    "declared": "拉开距离，再射冷冻射线",
-    "spell": "尚未结算。待幸运决定借机攻击是否命中。",
-    "combat": "冯离开触及。借机攻击d20=15+3=18，未定。冷冻射线已预掷，不对玩家公布。"
+    "declared": "直接打冷冻射线，不风筝",
+    "spell": "改声明：不离开触及。借机攻击作废。贴身远程劣势 8与12取8，+5=13命中。伤害7。戏法未扣环位。",
+    "combat": "格里姆HP 0，战斗结束。末页仍在其怀中。冯7/7，1环0/2，幸运3/3。XP+25。"
   },
-  "notes_public": "你往外门退时，他顺手砍来。这一刀的骰子已经出了，还没定是否砍中。问你要不要用幸运。"
+  "notes_public": "他倒下了。衣襟里还夹着那折纸。刀掉在门槛上。"
 }

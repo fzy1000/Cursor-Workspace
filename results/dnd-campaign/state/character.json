@@ -6,7 +6,7 @@
   "exhaustion": 0,
   "death_saves": {"success": 0, "fail": 0},
   "inspiration": false,
-  "xp": 0,
+  "xp": 25,
   "level": 1,
   "hp_current": 7,
   "luck_points": {"current": 3, "max": 3},
