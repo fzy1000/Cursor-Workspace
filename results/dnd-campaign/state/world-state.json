@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 5,
+  "turn": 6,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "旧书阁外室，内门前",
+    "place": "旧书阁外室，战斗中",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -34,7 +34,10 @@
     "grim_known": true,
     "grim_fled": false,
     "folio_in_player_hands": false,
-    "last_page_on_grim": true
+    "last_page_on_grim": true,
+    "charm_person_cast": true,
+    "charm_person_succeeded": false,
+    "combat": true
   },
   "clocks": {
     "grim_copying": {
@@ -57,39 +60,65 @@
     "grim": {
       "name": "格里姆·巴克曼",
       "role": "反派（类人邪教徒，扮抄写人）",
-      "attitude": "indifferent",
-      "score": 0,
+      "attitude": "hostile",
+      "score": -2,
       "alive": true,
       "known_to_player": true
     }
   },
   "unused_pregens_as_npcs": [],
   "inspiration": false,
+  "combat": {
+    "round": 1,
+    "whose_turn": "feng",
+    "initiative": [
+      {"id": "grim", "total": 19, "note": "d20=18+1"},
+      {"id": "feng", "total": 9, "note": "d20=7+2"}
+    ]
+  },
   "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [14, 3, 14],
+      "modifier": 0,
+      "total": 14,
+      "dc": 13,
+      "success": true,
+      "note": "格里姆感知豁免对抗魅惑人类。优势（黑暗忠诚）。取14。PHB PDF约p221；MM PDF约p332。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [7],
+      "modifier": 2,
+      "total": 9,
+      "dc": null,
+      "success": null,
+      "note": "冯先攻"
+    },
+    {
+      "notation": "d20",
+      "rolls": [18],
+      "modifier": 1,
+      "total": 19,
+      "dc": null,
+      "success": null,
+      "note": "格里姆先攻"
+    },
     {
       "notation": "d20",
       "rolls": [9],
       "modifier": 3,
       "total": 12,
-      "dc": null,
-      "success": null,
-      "note": "冯 感知（洞悉）"
-    },
-    {
-      "notation": "d20",
-      "rolls": [17],
-      "modifier": 2,
-      "total": 19,
-      "dc": null,
-      "success": null,
-      "note": "格里姆 魅力（欺瞒）"
+      "dc": 15,
+      "success": false,
+      "note": "弯刀 vs 法师护甲AC15"
     }
   ],
   "last_resolution": {
-    "turn": 5,
-    "declared": "解释来由；问这里情形、他是谁、为何在此、主人何在",
-    "insight_contest": "12对19，他占上风。他的说法听起来齐整。",
-    "owner": "材料与已生成要素均无阁主姓名。他称不知、人早不在。查主人须问村里。"
+    "turn": 6,
+    "declared": "使用魅惑人类",
+    "spell": "1环，V/S，30尺，感知豁免DC13。未在战斗中施放，目标不以「正在战斗」获优势。目标另有抗魅惑优势。豁免14（优势取高）成功。法术位1环 0/2。",
+    "combat": "先攻格里姆19、冯9。他砍一刀12未中。现为冯的回合。"
   },
-  "notes_public": "你说明是同事来信，要核对手稿末页。格里姆自称过路抄写人，说阁子空着、主人不在、末页他来时就没有。他答得整齐。门仍只开一条缝。"
+  "notes_public": "你对他施了魅惑。他抗住了，拔刀砍来，刀没砍中。轮到你。"
 }

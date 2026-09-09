@@ -82,7 +82,7 @@
       "ability": "int",
       "save_dc": 13,
       "attack": 5,
-      "slots": {"1": {"max": 2, "current": 1}},
+      "slots": {"1": {"max": 2, "current": 0}},
       "cantrips": ["光亮术", "法师之手", "冷冻射线"],
       "spellbook": ["燃烧之手", "魅惑人类", "羽落术", "法师护甲", "魔法飞弹", "睡眠术"],
       "prepared": ["法师护甲", "魔法飞弹", "睡眠术", "魅惑人类"]
