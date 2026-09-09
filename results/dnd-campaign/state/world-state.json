@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 2,
+  "turn": 3,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -13,7 +13,7 @@
   },
   "location": {
     "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
-    "place": "林东旧书阁外，清晨",
+    "place": "旧书阁外室，内门前",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -23,18 +23,22 @@
     "slept_at_inn": true,
     "mage_armor_active": true,
     "read_letter_aloud": false,
-    "entered_loft": false,
+    "entered_loft": true,
+    "entered_inner": false,
+    "observed_before_knock": true,
+    "knocked_inner_door": true,
     "folio_seen": false,
-    "grim_known": false,
+    "grim_known": true,
     "grim_fled": false,
-    "folio_in_player_hands": false
+    "folio_in_player_hands": false,
+    "last_page_on_grim": true
   },
   "clocks": {
     "grim_copying": {
-      "label": "格里姆赶抄／收束末页（过夜后已近完成）",
-      "value": 2,
+      "label": "格里姆已把末页收进怀里，人还在门口",
+      "value": 3,
       "max": 3,
-      "note": "玩家选择过夜，时钟+2。满则他撕走末页离开。当前：内门顶住，人还在内室收束。"
+      "note": "敲门惊动他：末页离案入怀。人未走，高潮变为当面要页。"
     }
   },
   "factions": {},
@@ -53,19 +57,37 @@
       "attitude": "indifferent",
       "score": 0,
       "alive": true,
-      "known_to_player": false
+      "known_to_player": true
     }
   },
   "unused_pregens_as_npcs": [],
   "inspiration": false,
-  "last_dice": [],
+  "last_dice": [
+    {
+      "notation": "d20",
+      "rolls": [17],
+      "modifier": 3,
+      "total": 20,
+      "dc": 10,
+      "success": true,
+      "note": "感知（察觉）观察环境。DC10容易。PHB第7章常用难度，PDF约p174；外室听声预置DC10。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [3],
+      "modifier": 5,
+      "total": 8,
+      "dc": 12,
+      "success": false,
+      "note": "智力（调查）检视痕迹。DC12。失败不挡路，少预告。PHB第7章PDF约p174。"
+    }
+  ],
   "last_resolution": {
-    "turn": 2,
-    "declared": "在店里过夜，施展法师护甲，第二天再去",
-    "checks": "无检定。长休与施法按规则自动成立。",
-    "lodging": "俭朴住宿5 sp + 俭朴当日餐膳3 sp = 8 sp。PHB「饮食与住宿」PDF约p158。",
-    "mage_armor": "长休结束后出门前施放（持续8小时）。若睡前施放，八小时会在醒来时结束。PHB法术篇PDF约p256；长休中激烈活动须超过1小时才打断，单次1动作施法不打断。PHB第8章PDF约p186。",
-    "clock": "过夜使 grim_copying 0→2。"
+    "turn": 3,
+    "declared": "先观察环境，然后敲门",
+    "perception": "17+3=20 vs DC10 成功",
+    "investigation": "3+5=8 vs DC12 失败",
+    "knock": "无检定。惊动内室；他将末页入怀后应门。社交仍冷漠。"
   },
-  "notes_public": "你在旅店过了一夜。黎明前，林东书阁的灯灭了。出门前你罩上法师护甲。现在你站在阁外。"
+  "notes_public": "你看清外间，听清里面只有一个人。调查没读出地上的细迹。你敲了内门。一个自称格里姆·巴克曼的抄写人应了门；敲门前你听见纸被折进衣襟的声音。"
 }
