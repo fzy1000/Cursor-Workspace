@@ -5,7 +5,7 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 4,
+  "turn": 5,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
@@ -28,6 +28,8 @@
     "observed_before_knock": true,
     "knocked_inner_door": true,
     "talked_with_grim": true,
+    "explained_reason": true,
+    "asked_who_and_owner": true,
     "folio_seen": false,
     "grim_known": true,
     "grim_fled": false,
@@ -66,29 +68,28 @@
   "last_dice": [
     {
       "notation": "d20",
-      "rolls": [3],
+      "rolls": [9],
       "modifier": 3,
-      "total": 6,
+      "total": 12,
       "dc": null,
       "success": null,
-      "note": "冯 感知（洞悉）。对抗，无DC。"
+      "note": "冯 感知（洞悉）"
     },
     {
       "notation": "d20",
-      "rolls": [4],
+      "rolls": [17],
       "modifier": 2,
-      "total": 6,
+      "total": 19,
       "dc": null,
       "success": null,
-      "note": "格里姆 魅力（欺瞒）。邪教徒资料卡欺瞒+2。MM PDF约p332。"
+      "note": "格里姆 魅力（欺瞒）"
     }
   ],
   "last_resolution": {
-    "turn": 4,
-    "declared": "和他对话",
-    "pc_words": "未指定逐句对白。按既定来意：说明自己也是为这册手稿、要看末页。未宣读陈的信。",
-    "insight_contest": "6对6，平。对抗平局则情况不变。PHB第7章PDF约p174。",
-    "social": "冷漠。肯说话，不让路，不交怀里的页。"
+    "turn": 5,
+    "declared": "解释来由；问这里情形、他是谁、为何在此、主人何在",
+    "insight_contest": "12对19，他占上风。他的说法听起来齐整。",
+    "owner": "材料与已生成要素均无阁主姓名。他称不知、人早不在。查主人须问村里。"
   },
-  "notes_public": "你跟格里姆说了：自己也是为这册手稿来的，要看末页。他说末页来时就没有，只抄过目录，并让你隔着门缝看案上的书。他仍挡在门口。他的话听不出破绽；敲门时那一下折纸，你还记得。"
+  "notes_public": "你说明是同事来信，要核对手稿末页。格里姆自称过路抄写人，说阁子空着、主人不在、末页他来时就没有。他答得整齐。门仍只开一条缝。"
 }
