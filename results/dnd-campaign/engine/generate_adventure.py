@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""按《城主指南》第3章、第5章、附录A表格掷骰生成地点型冒险。
+"""【已停用】全表连掷生成器。
 
-只输出骰值与命中条目（加出处），不把整张表抄进仓库。
-连接叙述仅限让各条目能同时成立，不另加未掷出的派系/年代/城镇。
+2026-09-09 起本场改用「选用表格 + 一条主线」，见
+`state/generated-adventure.json` 与 `GENERATION-LOG.md`。
+再运行本脚本会覆盖为旧的大杂烩结果，不要在本战役中执行。
 """
 from __future__ import annotations
 
@@ -741,4 +742,6 @@ def main(seed: int = 149205e3) -> None:
 
 
 if __name__ == "__main__":
-    main(20260908)
+    raise SystemExit(
+        "已停用：本脚本的全表连掷会覆盖《未完的问句》。见 GENERATION-LOG.md。"
+    )

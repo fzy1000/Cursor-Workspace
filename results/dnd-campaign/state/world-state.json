@@ -1,53 +1,54 @@
 {
-  "campaign": "三宝书程序生成 · 山隘口迷宫",
+  "campaign": "未完的问句",
   "edition": "D&D 5e",
-  "generation_seed": 20260908,
-  "session": 0,
-  "turn": 0,
-  "chargen_step": 1,
+  "generation_method": "DMG第3章允许从表选用要素；按「大冒险的基本要素」收成一条线，不再连掷第3+5章+附录A全表。",
+  "generation_seed": null,
+  "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
+  "session": 1,
+  "turn": 1,
+  "chargen_step": 6,
   "calendar": {
     "year_dr": null,
     "note": "三宝书未写明本场战役年份，不自拟 DR 纪年。"
   },
   "location": {
-    "region": "被遗忘国度神系下的默认核心假想世界（PHB附录B + DMG第1章）",
-    "place": "创角中（尚未进入开场）",
+    "region": "费伦西行商路旁的村庄（DMG村庄块；不是赛斯克或西门城）",
+    "place": "村里的旅店，薄暮",
     "place_en": null
   },
-  "player_character_id": null,
+  "player_character_id": "feng",
   "flags": {
-    "character_created": false,
-    "found_corpse_map": false,
-    "met_patron_officer": false,
-    "met_sage_ally": false,
-    "entered_maze": false,
-    "captive_rescued": false,
-    "undead_fled": false,
-    "map_in_player_hands": false
+    "character_created": true,
+    "heard_loft_lantern": false,
+    "read_letter_aloud": false,
+    "entered_loft": false,
+    "folio_seen": false,
+    "grim_known": false,
+    "grim_fled": false,
+    "folio_in_player_hands": false
   },
-  "clocks": {},
+  "clocks": {
+    "grim_copying": {
+      "label": "格里姆还在阁楼上赶抄末页（今夜结束前）",
+      "value": 0,
+      "max": 3,
+      "note": "玩家拖延则推进。满则他撕走末页离开。"
+    }
+  },
   "factions": {},
   "npcs": {
-    "evendur": {
-      "name": "伊文德尔·托斯汀",
-      "role": "军官（主顾）",
-      "attitude": "indifferent",
-      "score": 0,
-      "alive": true,
-      "known_to_player": false
-    },
-    "shandri": {
-      "name": "珊德瑞·埃文伍德",
-      "role": "智者（盟友）",
-      "attitude": "indifferent",
-      "score": 0,
-      "alive": true,
-      "known_to_player": false
-    },
-    "randal": {
-      "name": "兰德尔·安波克劳宁",
-      "role": "俘虏",
+    "lureene": {
+      "name": "路伊蒽·埃文伍德",
+      "role": "热心的平民（旅店主事）",
       "attitude": "friendly",
+      "score": 1,
+      "alive": true,
+      "known_to_player": false
+    },
+    "grim": {
+      "name": "格里姆·巴克曼",
+      "role": "反派（类人邪教徒，扮抄写人）",
+      "attitude": "indifferent",
       "score": 0,
       "alive": true,
       "known_to_player": false
@@ -56,5 +57,5 @@
   "unused_pregens_as_npcs": [],
   "inspiration": false,
   "last_dice": [],
-  "notes_public": "角色尚未按《玩家手册》第1章创建。冒险已用《城主指南》表格生成（见 GENERATION-LOG.md），创角完成后再执行开场：尸体与地图。"
+  "notes_public": "你从卡拉图西行。腰间那封去世同事的信，要你核对手稿末页。旅店炉火已生。林边那座旧书阁的事，店里的人比你先看见灯。"
 }

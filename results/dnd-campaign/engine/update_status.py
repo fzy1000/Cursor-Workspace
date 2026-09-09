@@ -139,6 +139,11 @@ def render_pc(pc: dict, world: dict, raw: dict) -> str:
     for key, cn in SKILL_CN.items():
         skill_lines.append(f"| {cn} | {skill_bonus(key, skills.get(key, False), ab, pb)} |")
     feat_lines = "（无）" if not pc.get("feats") else "\n".join(f"- {x}" for x in pc["feats"])
+    luck = raw.get("luck_points") or {}
+    if luck:
+        feat_lines = (feat_lines if feat_lines != "（无）" else "") + (
+            f"\n- **幸运点**：{luck.get('current', 0)} / {luck.get('max', 3)}（长休恢复）"
+        )
     man = pc.get("maneuvers") or []
     man_txt = "（无）\n\n" + pc.get("maneuvers_note", "") if not man else "\n".join(f"- {x}" for x in man)
     feat_txt = feat_lines if isinstance(feat_lines, str) else feat_lines
@@ -179,7 +184,7 @@ def render_pc(pc: dict, world: dict, raw: dict) -> str:
     pers = pc.get("personality") or {}
     return f"""# 角色状态 · {pc['name']}
 
-[回到战役说明](README.md)
+[回到战役说明](README.md) · [信仰与专长](options-faith-feats.md) · [生成日志](GENERATION-LOG.md)
 
 > 点开本文件即可查看当前属性、状态、装备、背包、技能、专长、战技与魔法。  
 > **数据源**：`state/character.json`（由 `engine/update_status.py` 生成）。规则口径见《玩家手册》第 1、7、8、9、10 章。
@@ -237,7 +242,7 @@ def render_pc(pc: dict, world: dict, raw: dict) -> str:
 
 {inv}
 
-**钱币**：{money.get('pp',0)} pp / {money.get('gp',0)} gp（深水城俗称龙币） / {money.get('ep',0)} ep / {money.get('sp',0)} sp / {money.get('cp',0)} cp
+**钱币**：{money.get('pp',0)} pp / {money.get('gp',0)} gp / {money.get('ep',0)} ep / {money.get('sp',0)} sp / {money.get('cp',0)} cp
 
 ## 技能
 
