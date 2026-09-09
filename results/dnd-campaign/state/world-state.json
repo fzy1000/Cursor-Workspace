@@ -5,15 +5,15 @@
   "generation_seed": null,
   "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
   "session": 1,
-  "turn": 16,
+  "turn": 17,
   "chargen_step": 6,
   "calendar": {
     "year_dr": null,
     "note": "三宝书未写明本场战役年份，不自拟 DR 纪年。"
   },
   "location": {
-    "region": "费伦西行商路上的小镇（DMG小镇块；未取专名）",
-    "place": "小镇西市集外，货队停处",
+    "region": "费伦西行商路（小镇以西，未取专名）",
+    "place": "随戈尔斯塔格货队刚出镇，向西",
     "place_en": null
   },
   "player_character_id": "feng",
@@ -21,7 +21,7 @@
     "character_created": true,
     "heard_loft_lantern": true,
     "slept_at_inn": true,
-    "mage_armor_active": false,
+    "mage_armor_active": true,
     "read_letter_aloud": false,
     "entered_loft": true,
     "entered_inner": true,
@@ -64,7 +64,10 @@
     "found_westbound_caravan": true,
     "caravan_seat_offered": true,
     "observed_caravan": true,
-    "caravan_looks_ordinary": true
+    "caravan_looks_ordinary": true,
+    "agreed_caravan_dawn": true,
+    "joined_westbound_caravan": true,
+    "mage_armor_cast_at_departure": true
   },
   "pending": null,
   "caravan": {
@@ -74,7 +77,7 @@
     "wagons": 2,
     "draft_horses": 4,
     "anomaly": false,
-    "note": "第16轮察觉22对DC12锁定。货箱寻常商货。无藏人。姓名未向玩家报出。"
+    "note": "第16轮察觉锁定编制。第17轮冯已上车，黎明出镇。姓名已在挂钩时被货主叫出。"
   },
   "clocks": {
     "grim_copying": {
@@ -118,7 +121,7 @@
       "score": 0,
       "alive": true,
       "known_to_player": true,
-      "last_told": "黎明沿商路向西开。自己管饭、夜里轮一更，车上有空位。往西能接到更大的城，商人常提深水城。未报精确天数，未收车资。"
+      "last_told": "冯答应黎明同行。自己管饭、夜里轮一更。未收车资。未报精确天数。"
     },
     "darvin": {
       "name": "达文",
@@ -127,8 +130,8 @@
       "score": 0,
       "alive": true,
       "known_to_player": true,
-      "name_told": false,
-      "last_told": "第16轮被看见：带刀、守车。姓名未报。"
+      "name_told": true,
+      "last_told": "黎明挂钩时戈尔斯塔格叫他达文。带刀、赶牲口。"
     },
     "ander": {
       "name": "安德",
@@ -137,8 +140,8 @@
       "score": 0,
       "alive": true,
       "known_to_player": true,
-      "name_told": false,
-      "last_told": "第16轮被看见：带刀、守车。姓名未报。"
+      "name_told": true,
+      "last_told": "黎明挂钩时戈尔斯塔格叫他安德。带刀、守第二辆车。"
     },
     "grim": {
       "name": "格里姆·巴克曼",
@@ -169,6 +172,15 @@
     }
   },
   "last_dice": [
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。答应同行；旅店长休（住宿已付）；黎明施法师护甲消耗1个1环，AC15，持续8小时。口粮-1。不跳过整天以免时限被耗掉。PHB PDF约p256、p186、p150。"
+    },
     {
       "notation": "d20",
       "rolls": [19],
@@ -378,10 +390,11 @@
     }
   ],
   "last_resolution": {
-    "turn": 16,
-    "declared": "观察车队情况，有多少人，有没有异常",
-    "observe": "当面三人两车。察觉22对DC12成功：四匹挽马，车底无人，货捆寻常，无第四人脚印，未见圣徽或夹层。",
-    "remain": "今夜旅店已付。护盾术未抄入。法师护甲未再施。未出发。"
+    "turn": 17,
+    "declared": "答应第二天走，出门前再施法师护甲",
+    "rest": "旅店长休，住宿已付。法术位先恢复2/2。",
+    "cast": "黎明法师护甲，1环余1/2，AC15，8小时。",
+    "travel": "随货队刚出镇向西。未报深水城里数。未掷荒野遭遇。口粮6→5。"
   },
-  "notes_public": "货队是三个人、两辆车、四匹马。看过车底和货捆，没有不对的地方。黎明开。今夜还在镇上。"
+  "notes_public": "你答应跟戈尔斯塔格的货队走。店里睡了一夜，天亮施了法师护甲，车已出镇向西。护甲撑不到天黑。"
 }
