@@ -68,7 +68,8 @@
     "agreed_caravan_dawn": true,
     "joined_westbound_caravan": true,
     "mage_armor_cast_at_departure": true,
-    "talked_with_gorstag_on_wagon": true
+    "talked_with_gorstag_on_wagon": true,
+    "dialogue_voice_corrected": true
   },
   "pending": null,
   "caravan": {
@@ -122,7 +123,7 @@
       "score": 0,
       "alive": true,
       "known_to_player": true,
-      "last_told": "车上闲聊：货是布和干货；往西走这条路的人常提深水城，不报哪天进城。问冯是不是读书人。夜里守更到了再说。未收车资。"
+      "last_told": "车上说话（已按中译奇幻口吻重写）：布匹与干货，前头市集脱手；商路通大城；走货的人常念深水城，何日望见城门不敢说。见书册与水晶，问阁下带着这些做什么。未收车资。"
     },
     "darvin": {
       "name": "达文",
@@ -401,9 +402,9 @@
   ],
   "last_resolution": {
     "turn": 18,
-    "declared": "在车上跟货主聊聊天",
-    "talk": "戈尔斯塔格：货是布和干货；往西常提深水城，不保证进城日。问冯是不是读书人。守更到了再说。",
-    "remain": "法师护甲仍在（黎明施的，约撑到午后）。1环1/2。未跳过赶路。"
+    "declared": "在车上跟货主说话；后指出对白口吻不对",
+    "talk": "同一事实，重写口吻：布匹干货、商路通大城、深水城为远名、何日望城门不敢说。见书册水晶而问。",
+    "remain": "法师护甲仍在（黎明所施，约撑到午后）。1环1/2。未跳过赶路。未另开一轮。"
   },
-  "notes_public": "你在车上和戈尔斯塔格闲聊。他运布和干货，往西走，说不准哪天进城。他问你是不是读书人。护甲大约还能撑到午后。"
+  "notes_public": "车上与戈尔斯塔格说过话。他运布匹和干货，说商路通大城，深水城只是走货人口中的远名。他看着你的书册和水晶。护甲大约还能撑到午后。"
 }
