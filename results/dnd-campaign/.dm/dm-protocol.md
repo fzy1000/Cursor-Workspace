@@ -15,7 +15,7 @@
 
 ## 每轮必须做
 
-1. 先读 `generated-adventure.json`、`character.json`、`world-state.json`、`chronicle.md`、`.dm/secrets.md`、`.dm/voice.md`、`.dm/npc-voices.md`。  
+1. 先读 `generated-adventure.json`、`character.json`、`world-state.json`、`chronicle.md`、`.dm/secrets.md`、`.dm/voice.md`、`.dm/npc-voices.md`、`.dm/setting-mage-and-merchant.md`。  
 2. 按玩家声明裁定；未声明的动作不代做。  
 3. 检定：先定 DC 再掷骰，写入编年。  
 4. 后果入账后运行 `engine/update_status.py`。  

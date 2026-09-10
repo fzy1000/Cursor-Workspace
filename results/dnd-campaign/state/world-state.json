@@ -70,7 +70,8 @@
     "mage_armor_cast_at_departure": true,
     "talked_with_gorstag_on_wagon": true,
     "dialogue_voice_corrected": true,
-    "gorstag_knows_caster": true
+    "gorstag_knows_caster": true,
+    "gorstag_mage_register_revised": true
   },
   "pending": null,
   "caravan": {
@@ -124,7 +125,7 @@
       "score": 0,
       "alive": true,
       "known_to_player": true,
-      "last_told": "认出冯是会法术的（书、水晶、长棍、出镇施法）。不装傻。布匹怕火；夜里肯出手便好，守更仍在。商路通大城，深水城为远名。未收车资。"
+      "last_told": "认出冯是法师。不下令、不盘问。布匹怕火、夜里看顾皆为请求。商路通大城，深水城为远名。未收车资。"
     },
     "darvin": {
       "name": "达文",
@@ -403,9 +404,9 @@
   ],
   "last_resolution": {
     "turn": 18,
-    "declared": "指出货主不该对一身施法者行头装傻盘问",
-    "talk": "作废「带着这些做什么」。戈尔斯塔格已认出会法术的：忌惮、布匹怕火、夜里肯否出手。仍冷漠，不献殷勤。",
+    "declared": "对照三宝书与网上世界观，重写商队老板对法系的口气",
+    "talk": "作废吩咐雇工腔。戈尔斯塔格称法师，又敬又怕，不冒犯。布匹与夜里皆为请求。仍冷漠。",
     "remain": "法师护甲仍在。1环1/2。未跳过赶路。未另开一轮。"
   },
-  "notes_public": "戈尔斯塔格看得出你是会法术的。他提起布匹怕火，夜里若有东西靠近，问你肯不肯出手。守更的规矩还在。护甲大约还能撑到午后。"
+  "notes_public": "戈尔斯塔格看得出你是法师。他放低声音，请你施法时避着布匹，夜里若有祸事，求你看顾一眼。护甲大约还能撑到午后。"
 }
