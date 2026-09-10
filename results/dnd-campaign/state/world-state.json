@@ -1,0 +1,412 @@
+{
+  "campaign": "未完的问句",
+  "edition": "D&D 5e",
+  "generation_method": "DMG第3章允许从表选用要素；按「大冒险的基本要素」收成一条线，不再连掷第3+5章+附录A全表。",
+  "generation_seed": null,
+  "supersedes": "20260908 山隘口迷宫全表连掷（玩家判定机械、大杂烩，已作废）",
+  "session": 1,
+  "turn": 18,
+  "chargen_step": 6,
+  "calendar": {
+    "year_dr": null,
+    "note": "三宝书未写明本场战役年份，不自拟 DR 纪年。"
+  },
+  "location": {
+    "region": "费伦西行商路（小镇以西，未取专名）",
+    "place": "随戈尔斯塔格货队刚出镇，向西",
+    "place_en": null
+  },
+  "player_character_id": "feng",
+  "flags": {
+    "character_created": true,
+    "heard_loft_lantern": true,
+    "slept_at_inn": true,
+    "mage_armor_active": true,
+    "read_letter_aloud": false,
+    "entered_loft": true,
+    "entered_inner": true,
+    "observed_before_knock": true,
+    "knocked_inner_door": true,
+    "talked_with_grim": true,
+    "explained_reason": true,
+    "asked_who_and_owner": true,
+    "folio_seen": true,
+    "grim_known": true,
+    "grim_fled": false,
+    "folio_in_player_hands": true,
+    "last_page_on_grim": false,
+    "searched_grim": true,
+    "searched_inner": true,
+    "identified_shar_symbol": true,
+    "letter_question_answered": true,
+    "charm_person_cast": true,
+    "charm_person_succeeded": false,
+    "combat": false,
+    "ray_of_frost_hit": true,
+    "ray_of_frost_hit_2": true,
+    "ray_of_frost_hit_3": true,
+    "pending_lucky": false,
+    "grim_defeated": true,
+    "packed_loft_loot": true,
+    "sold_scimitar": true,
+    "sold_leather": true,
+    "visited_village_market": true,
+    "bought_week_rations": true,
+    "copy_materials_unbought": true,
+    "asked_lureene_today": true,
+    "copy_shield_failed_no_gold": true,
+    "wrote_chen_reply": true,
+    "asked_lureene_wizard_college": true,
+    "traveled_trade_road": true,
+    "arrived_road_town": true,
+    "asked_town_wizard_college": true,
+    "asked_town_caravan": true,
+    "found_westbound_caravan": true,
+    "caravan_seat_offered": true,
+    "observed_caravan": true,
+    "caravan_looks_ordinary": true,
+    "agreed_caravan_dawn": true,
+    "joined_westbound_caravan": true,
+    "mage_armor_cast_at_departure": true,
+    "talked_with_gorstag_on_wagon": true,
+    "dialogue_voice_corrected": true,
+    "gorstag_knows_caster": true,
+    "gorstag_mage_register_revised": true
+  },
+  "pending": null,
+  "caravan": {
+    "merchant": "戈尔斯塔格",
+    "guards_unannounced": ["达文", "安德"],
+    "people": 3,
+    "wagons": 2,
+    "draft_horses": 4,
+    "anomaly": false,
+    "note": "第16轮察觉锁定编制。第17轮冯已上车，黎明出镇。姓名已在挂钩时被货主叫出。"
+  },
+  "clocks": {
+    "grim_copying": {
+      "label": "末页已取回，陈的问句已能回答",
+      "value": 3,
+      "max": 3,
+      "note": "敲门惊动他：末页离案入怀。人未走，高潮变为当面要页。"
+    }
+  },
+  "factions": {},
+  "npcs": {
+    "lureene": {
+      "name": "路伊蒽·埃文伍德",
+      "role": "热心的平民（旅店主事）",
+      "attitude": "friendly",
+      "score": 1,
+      "alive": true,
+      "known_to_player": true,
+      "last_told": "村里没有法师学院。过路商人提过大城（她听过深水城这个名字）。学院的名她叫不出。抄写人没收过。"
+    },
+    "randall": {
+      "name": "兰德尔·格莱卡索",
+      "role": "小镇欧格玛神庙司事（知识）",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true
+    },
+    "shandri": {
+      "name": "珊德瑞·托斯汀",
+      "role": "小镇旅店主事",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true
+    },
+    "gorstag": {
+      "name": "戈尔斯塔格",
+      "role": "西行货主（旅行商人）",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true,
+      "last_told": "认出冯是法师。短句，不文。布怕火，求离货远一点；夜里出事肯伸手更好，不敢逼。深水城为远名。未收车资。"
+    },
+    "darvin": {
+      "name": "达文",
+      "role": "货队雇工",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true,
+      "name_told": true,
+      "last_told": "黎明挂钩时戈尔斯塔格叫他达文。带刀、赶牲口。"
+    },
+    "ander": {
+      "name": "安德",
+      "role": "货队雇工",
+      "attitude": "indifferent",
+      "score": 0,
+      "alive": true,
+      "known_to_player": true,
+      "name_told": true,
+      "last_told": "黎明挂钩时戈尔斯塔格叫他安德。带刀、守第二辆车。"
+    },
+    "grim": {
+      "name": "格里姆·巴克曼",
+      "role": "反派（类人邪教徒，扮抄写人）",
+      "attitude": "hostile",
+      "score": -2,
+      "alive": false,
+      "known_to_player": true
+    }
+  },
+  "unused_pregens_as_npcs": [],
+  "inspiration": false,
+  "combat": {
+    "round": 3,
+    "whose_turn": null,
+    "ended": true,
+    "initiative": [
+      {"id": "grim", "total": 19, "note": "d20=18+1"},
+      {"id": "feng", "total": 9, "note": "d20=7+2"}
+    ],
+    "grim": {
+      "ac": 12,
+      "hp_current": 0,
+      "hp_max": 9,
+      "speed": 30,
+      "speed_reduced": false,
+      "note": "邪教徒资料卡，MM PDF约p332。第三发冷冻射线7寒冷，HP 3→0。XP 25（图鉴挑战1/8）。"
+    }
+  },
+  "last_dice": [
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。冷漠货主已允同行，车上闲聊不另定DC。PHB第8章。未报深水城里数、学院专名、车资。"
+    },
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。答应同行；旅店长休（住宿已付）；黎明施法师护甲消耗1个1环，AC15，持续8小时。口粮-1。不跳过整天以免时限被耗掉。PHB PDF约p256、p186、p150。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [19],
+      "modifier": 3,
+      "total": 22,
+      "dc": 12,
+      "success": true,
+      "note": "感知（察觉）观察货队。先定DC12。当面三人可数不另掷。察觉熟练+3。PHB第7章。无第二条反派线。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [9],
+      "modifier": 5,
+      "total": 14,
+      "dc": 12,
+      "success": true,
+      "note": "智力（调查）打听西行货队。先定DC12。调查熟练+5。PHB第7章常用难度；DMG小镇有外来货与旅行商人，约p17。未写本镇至深水城里数，不自拟日程；无商队票价表，不自拟车资。"
+    },
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无遭遇掷骰。商路一日程至最近小镇（DMG村庄供养附近城镇；未写里数与镇名）。路宿为长休。PHB PDF约p181–p182、约p158；DMG PDF约p17。"
+    },
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。抄护盾术失败：缺50gp材料。写信无检定。路伊蒽不知学院名。研究员：情报在学院/图书馆，本村没有。PHB PDF约p114、p138、p115、p81；DMG PDF约p17、p19。"
+    },
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。口粮7×5sp=35sp。抄法材料50gp买不到也买不起。友善NPC路伊蒽提供已知村情。PHB PDF约p150、p114、第8章；DMG PDF约p17。"
+    },
+    {
+      "notation": "none",
+      "rolls": [],
+      "modifier": 0,
+      "total": 0,
+      "dc": null,
+      "success": null,
+      "note": "无掷骰。出售：弯刀市价25gp半价12gp5sp；皮甲市价10gp半价5gp。PHB PDF约p144、p145、p149。"
+    },
+    {
+      "notation": "d100",
+      "rolls": [72],
+      "modifier": 0,
+      "total": 72,
+      "dc": null,
+      "success": null,
+      "note": "个体宝藏挑战0-4。72→3d6 gp。DMG第7章，PDF约p135（印页约129后一页）。"
+    },
+    {
+      "notation": "3d6",
+      "rolls": [3, 3, 2],
+      "modifier": 0,
+      "total": 8,
+      "dc": null,
+      "success": null,
+      "note": "金币。冯 9gp2sp → 17gp2sp。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [16],
+      "modifier": 5,
+      "total": 21,
+      "dc": 12,
+      "success": true,
+      "note": "内室智力（调查）。先定DC12（小室彻底搜寻；PHB第7章常用难度）。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [8],
+      "modifier": 3,
+      "total": 11,
+      "dc": 10,
+      "success": true,
+      "note": "智力（宗教）辨认圣徽。先定DC10。未熟练+3。PHB附录B PDF约p294：莎尔，带边的黑盘子。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [8, 12, 8],
+      "modifier": 5,
+      "total": 13,
+      "dc": 12,
+      "success": true,
+      "note": "贴身冷冻射线，劣势（5尺内敌对）。两粒取低8。8+5=13命中AC12。戏法未扣环位。PHB第9章、PDF约p271。"
+    },
+    {
+      "notation": "1d8",
+      "rolls": [7],
+      "modifier": 0,
+      "total": 7,
+      "dc": null,
+      "success": null,
+      "note": "冷冻射线寒冷伤害。格里姆HP 3→0。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [15],
+      "modifier": 3,
+      "total": 18,
+      "dc": 15,
+      "success": null,
+      "note": "借机攻击已掷但玩家改声明不离开触及，此骰作废，未命中也未伤害。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [10],
+      "modifier": 5,
+      "total": 15,
+      "dc": 12,
+      "success": true,
+      "note": "第二发冷冻射线法术攻击 vs AC12。戏法，未扣环位。PHB PDF约p271。"
+    },
+    {
+      "notation": "1d8",
+      "rolls": [2],
+      "modifier": 0,
+      "total": 2,
+      "dc": null,
+      "success": null,
+      "note": "冷冻射线寒冷伤害。格里姆HP 5→3。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [2],
+      "modifier": 3,
+      "total": 5,
+      "dc": 15,
+      "success": false,
+      "note": "格里姆第3轮弯刀 vs 法师护甲AC15"
+    },
+    {
+      "notation": "d20",
+      "rolls": [19],
+      "modifier": 5,
+      "total": 24,
+      "dc": 12,
+      "success": true,
+      "note": "冷冻射线法术攻击 vs AC12。PHB PDF约p271。"
+    },
+    {
+      "notation": "1d8",
+      "rolls": [4],
+      "modifier": 0,
+      "total": 4,
+      "dc": null,
+      "success": null,
+      "note": "冷冻射线寒冷伤害。格里姆HP 9→5。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [6],
+      "modifier": 3,
+      "total": 9,
+      "dc": 15,
+      "success": false,
+      "note": "格里姆第2轮弯刀 vs 法师护甲AC15"
+    },
+    {
+      "notation": "d20",
+      "rolls": [14, 3, 14],
+      "modifier": 0,
+      "total": 14,
+      "dc": 13,
+      "success": true,
+      "note": "格里姆感知豁免对抗魅惑人类。优势（黑暗忠诚）。取14。PHB PDF约p221；MM PDF约p332。"
+    },
+    {
+      "notation": "d20",
+      "rolls": [7],
+      "modifier": 2,
+      "total": 9,
+      "dc": null,
+      "success": null,
+      "note": "冯先攻"
+    },
+    {
+      "notation": "d20",
+      "rolls": [18],
+      "modifier": 1,
+      "total": 19,
+      "dc": null,
+      "success": null,
+      "note": "格里姆先攻"
+    },
+    {
+      "notation": "d20",
+      "rolls": [9],
+      "modifier": 3,
+      "total": 12,
+      "dc": 15,
+      "success": false,
+      "note": "弯刀 vs 法师护甲AC15"
+    }
+  ],
+  "last_resolution": {
+    "turn": 18,
+    "declared": "对照三宝书与网上世界观，重写商队老板对法系的口气",
+    "talk": "作废文绉绉。戈尔斯塔格称法师，短句求离货远一点、夜里肯伸手。不敢逼。仍冷漠。",
+    "remain": "法师护甲仍在。1环1/2。未跳过赶路。未另开一轮。"
+  },
+  "notes_public": "戈尔斯塔格看得出你是法师。他放低声音：布怕火，求你再念时离货远一点；夜里要是出事，你肯伸手更好，他不敢逼。护甲大约还能撑到午后。"
+}

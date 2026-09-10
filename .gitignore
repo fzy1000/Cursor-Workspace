@@ -1,4 +1,6 @@
 .venv/
+__pycache__/
+*.pyc
 .DS_Store
 
 # Excel 打开时产生的临时锁文件（完整文件名，避免 $ 在 glob 中的歧义）
